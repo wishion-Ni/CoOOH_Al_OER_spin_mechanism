@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Manuscript-facing T01 renderer; outputs are regenerated from repository CSV source data.
 from pathlib import Path
 import numpy as np
 import pandas as pd
