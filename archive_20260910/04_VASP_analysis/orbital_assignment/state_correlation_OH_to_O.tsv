@@ -1,0 +1,11 @@
+material	spin	OH_feature	OH_E_EF	O_feature	O_E_EF	delta_E_O_minus_OH_eV	fingerprint_similarity	assignment	crossing_assessment	confidence
+Pristine	up	UF1	-0.09663345	UF1	0.03177505	0.12840850	0.88549451	correlated mixed periodic feature	differential shift/mixing; true crossing not demonstrable without band-overlap phases	high
+Pristine	up	UF2	-0.72963345	UF2	-0.71022495	0.01940850	0.96438363	correlated mixed periodic feature	differential shift/mixing; true crossing not demonstrable without band-overlap phases	high
+Pristine	up	UF4	-1.88963345	UF3	-1.34522495	0.54440850	0.91434876	correlated mixed periodic feature	differential shift/mixing; true crossing not demonstrable without band-overlap phases	high
+Pristine	down	DF1	-0.09663345	DF2	0.03177505	0.12840850	0.15491060	weak/ambiguous correlation	differential shift/mixing; true crossing not demonstrable without band-overlap phases	low
+Pristine	down	DF2	-0.94063345	DF3	-1.02722495	-0.08659150	0.61174735	correlated mixed periodic feature	differential shift/mixing; true crossing not demonstrable without band-overlap phases	medium
+Al16	up	UF1	-0.55015882	UF2	-1.10482564	-0.55466682	0.64534108	correlated mixed periodic feature	differential shift/mixing; true crossing not demonstrable without band-overlap phases	medium
+Al16	up	UF2	-1.43315882	UF1	-0.44082564	0.99233318	0.61228362	correlated mixed periodic feature	differential shift/mixing; true crossing not demonstrable without band-overlap phases	medium
+Al16	up	UF3	-1.76415882	UF3	-1.87882564	-0.11466682	0.93121142	correlated mixed periodic feature	differential shift/mixing; true crossing not demonstrable without band-overlap phases	high
+Al16	down	DF1	0.00084118	DF1	0.00117436	0.00033318	0.10849607	weak/ambiguous correlation	differential shift/mixing; true crossing not demonstrable without band-overlap phases	low
+Al16	down	DF2	-1.21215882	DF2	-1.87882564	-0.66666682	0.27629861	weak/ambiguous correlation	differential shift/mixing; true crossing not demonstrable without band-overlap phases	low

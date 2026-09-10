@@ -1,0 +1,5 @@
+system	state	status	EF_eV	Vvac_eV	work_function_eV	reason
+pristine_OH	*OH	UNAVAILABLE	-3.34736655	NA	NA	No LOCPOT in validated source set; only within-system E-EF ordering is reported.
+pristine_O	*O	UNAVAILABLE	-3.39977505	NA	NA	No LOCPOT in validated source set; only within-system E-EF ordering is reported.
+Al16_OH	*OH	UNAVAILABLE	-3.30884118	NA	NA	No LOCPOT in validated source set; only within-system E-EF ordering is reported.
+Al16_O	*O	UNAVAILABLE	-3.30217436	NA	NA	No LOCPOT in validated source set; only within-system E-EF ordering is reported.

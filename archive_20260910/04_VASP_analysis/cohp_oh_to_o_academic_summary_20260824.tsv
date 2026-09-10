@@ -1,0 +1,7 @@
+material	state	distance_A	ICOHP_spin1_eV	ICOHP_spin2_eV	ICOHP_total_eV	spilling_spin1_percent	spilling_spin2_percent
+Undoped	*OH	1.87588	-0.49618	-1.43149	-1.92767	0.94	1.24
+Undoped	*O	1.74323	-1.05645	-2.33612	-3.39257	0.94	1.24
+Al16	*OH	1.87588	-0.45504	-1.47507	-1.93011	0.93	1.27
+Al16	*O	1.74323	-0.66391	-2.37854	-3.04245	0.92	1.26
+Undoped	Delta(O-OH)	NA	-0.56027	-0.90463	-1.46490	NA	NA
+Al16	Delta(O-OH)	NA	-0.20887	-0.90347	-1.11234	NA	NA

@@ -1,0 +1,17 @@
+field	value
+reference	JACS_DOI_10.1021/jacs.6c06054
+mechanism	conventional_four_step_AEM_CHE
+surface	strict_reconstructed_undoped_site03_terminal
+electronic_jobs	bare:110858_12;OH:110858_13;O:110858_14;OOH_o03:110935_17;H2:110942_12;H2O:110942_13
+vibration_jobs	O:110953_0;OH:110953_1;OOH_o03:110953_2;H2:110954_0;H2O:110954_1
+electronic_protocol	spin_PBE+U_Co_Ueff4.5_eV;IVDW11;ENCUT520_eV;4x3x1;20_A_vacuum;ISMEAR1_surface
+vibration_protocol	VASP_IBRION5;NFREE2;POTIM0.015;mode-selective_surface_adsorbates;full_gas_molecules
+temperature_K	298.15
+pressure_bar	1.0
+adsorbate_low_frequency_treatment	100_cm-1_cutoff;OOH_56.069290_cm-1_replaced;PDS_and_eta_unaffected
+gas_treatment	ideal_gas_translation_rotation_internal_vibration;H2_and_H2O
+oer_closure_eV	4.92
+literature_site03_target_eta_V	1.00
+comparison_tolerance_V	0.20
+comparison_result	PASS_BOUNDARY;eta_0.800710620_V;deviation_-0.199289380_V;PDS_OH_to_O_matches
+fitting	none

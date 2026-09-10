@@ -1,0 +1,3 @@
+material	state	projection	Emin_eV	Emax_eV	d_center_eV	d_weight
+Undoped CoOOH	OH	active_Co_3d_spin_sum	-8.000	4.000	-2.89479383	9.83027289
+Al-doped CoOOH	OH	active_Co_3d_spin_sum	-8.000	4.000	-2.74421091	9.47954901

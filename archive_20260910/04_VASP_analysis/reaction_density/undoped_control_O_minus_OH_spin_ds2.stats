@@ -1,0 +1,7 @@
+input_grid=420x280x420
+output_grid=210x140x210
+volume_A3=12416.5502136
+integrated_delta_m_muB=3.28786908665
+magnetization_min_muB_A3=-2.19794154167
+magnetization_max_muB_A3=2.14078569412
+written_points=6174000

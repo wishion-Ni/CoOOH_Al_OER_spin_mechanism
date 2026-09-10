@@ -1,0 +1,5 @@
+system	state	neighbor_element	neighbor_atom	Obridge_atom	nearEF_neighbor_Obridge_minusCOHP_integral	nearEF_neighbor_Obridge_absCOHP_integral	d_up	sp_up	d_down	sp_down	interpretation
+pristine_OH	*OH	Co	23	259	-0.39531147	0.41832847	0.76638810	0.04337898	1.68891717	0.02763672	magnetic d-like continuation
+pristine_O	*O	Co	23	258	-0.39192315	0.43320900	0.72313673	0.03989642	1.66611107	0.02528908	magnetic d-like continuation
+Al16_OH	*OH	Al	51	259	0.00571520	0.03387068	0.00000000	0.00491857	0.00000000	0.00753881	weak nonmagnetic sp continuation
+Al16_O	*O	Al	51	258	0.00347760	0.03903816	0.00000000	0.00471622	0.00000000	0.00667980	weak nonmagnetic sp continuation

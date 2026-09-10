@@ -1,0 +1,5 @@
+system	normal_finish	abs_charge_spilling_up_percent	abs_charge_spilling_down_percent	total_spilling	recovered_electrons	expected_electrons	validated_pairs_per_spin	max_distance_error_A	basis	status
+pristine_OH	yes	0.94	1.24	not separately reported by this LOBSTER output	1547.9997	1548	8	0.00000000	recommended pbeVaspFit2015	normal completion; absolute charge spilling and pairs pass; total spilling unavailable
+pristine_O	yes	0.94	1.24	not separately reported by this LOBSTER output	1547.0001	1547	7	0.00000000	recommended pbeVaspFit2015	normal completion; absolute charge spilling and pairs pass; total spilling unavailable
+Al16_OH	yes	0.93	1.27	not separately reported by this LOBSTER output	1488.0003	1488	8	0.00000000	recommended pbeVaspFit2015	normal completion; absolute charge spilling and pairs pass; total spilling unavailable
+Al16_O	yes	0.92	1.26	not separately reported by this LOBSTER output	1486.9998	1487	7	0.00000000	recommended pbeVaspFit2015	normal completion; absolute charge spilling and pairs pass; total spilling unavailable

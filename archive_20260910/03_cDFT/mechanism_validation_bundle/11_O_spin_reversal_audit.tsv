@@ -1,0 +1,21 @@
+method	partition	system	state	Oads_index	N_up	N_down	N_total	local_spin_muB	charge_e	spin_axis_note	source_file
+CP2K	Mulliken	pristine	*OH	212	3.526147	2.899033	6.425180	0.627114	-0.425180	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_undoped_OH_baseline.out
+CP2K	Mulliken	pristine	*O	211	3.423548	2.859249	6.282797	0.564299	-0.282797	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_undoped_O_baseline.out
+CP2K	Hirshfeld	pristine	*OH	212	3.374000	2.767000	6.141000	0.607000	-0.141000	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_undoped_OH_baseline.out
+CP2K	Hirshfeld	pristine	*O	211	3.107000	2.570000	5.677000	0.537000	0.324000	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_undoped_O_baseline.out
+LOBSTER	Mulliken	pristine	*OH	348	3.580000	3.510000	7.090000	0.070000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/undoped_OH_GROSSPOP.lobster
+LOBSTER	Loewdin	pristine	*OH	348	3.350000	3.280000	6.630000	0.070000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/undoped_OH_GROSSPOP.lobster
+LOBSTER	Mulliken	pristine	*O	347	3.780000	3.750000	7.530000	0.030000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/undoped_O_GROSSPOP.lobster
+LOBSTER	Loewdin	pristine	*O	347	2.730000	2.710000	5.440000	0.020000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/undoped_O_GROSSPOP.lobster
+CP2K	Mulliken	Al16	*OH	222	3.505514	3.166252	6.671766	0.339262	-0.671766	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_Al16_OH_baseline.out
+CP2K	Mulliken	Al16	*O	221	2.952778	3.415675	6.368453	-0.462897	-0.368453	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_Al16_O_baseline.out
+CP2K	Hirshfeld	Al16	*OH	222	3.318000	2.981000	6.299000	0.336000	-0.299000	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_Al16_OH_baseline.out
+CP2K	Hirshfeld	Al16	*O	221	2.732000	3.140000	5.872000	-0.408000	0.128000	same global alpha-beta convention; active Co spin is positive	artifacts/mechanism_validation_sources_20260901/cp2k_Al16_O_baseline.out
+LOBSTER	Mulliken	Al16	*OH	348	3.700000	3.630000	7.330000	0.070000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/Al16_OH_GROSSPOP.lobster
+LOBSTER	Loewdin	Al16	*OH	348	3.260000	3.190000	6.450000	0.070000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/Al16_OH_GROSSPOP.lobster
+LOBSTER	Mulliken	Al16	*O	347	3.960000	3.940000	7.900000	0.020000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/Al16_O_GROSSPOP.lobster
+LOBSTER	Loewdin	Al16	*O	347	2.620000	2.600000	5.220000	0.020000		VASP/LOBSTER spin 1/up minus spin 2/down	artifacts/lobster_grosspop_oh_o_20260826/Al16_O_GROSSPOP.lobster
+VASP+Bader	OUTCAR local moment + Bader charge	pristine	*OH	348				0.159000	-0.618730	Bader charge is not a spin partition; OUTCAR moment remains positive	artifacts/cooh_al16_oh_to_o_mechanism_data_for_image_ai_20260831.md
+VASP+Bader	OUTCAR local moment + Bader charge	pristine	*O	347				0.813000	-0.358038	Bader charge is not a spin partition; OUTCAR moment remains positive	artifacts/cooh_al16_oh_to_o_mechanism_data_for_image_ai_20260831.md
+VASP+Bader	OUTCAR local moment + Bader charge	Al16	*OH	348				0.328000	-0.650293	Bader charge is not a spin partition; OUTCAR moment remains positive	artifacts/cooh_al16_oh_to_o_mechanism_data_for_image_ai_20260831.md
+VASP+Bader	OUTCAR local moment + Bader charge	Al16	*O	347				1.028000	-0.426088	Bader charge is not a spin partition; OUTCAR moment remains positive	artifacts/cooh_al16_oh_to_o_mechanism_data_for_image_ai_20260831.md

@@ -1,0 +1,6 @@
+component	translation_eV	rotation_eV	vibration_eV	total_correction_eV	notes
+ads_O	0	0	0.030322924	0.030322924	mode-selective;100_cm-1_cutoff_not_triggered
+ads_OH	0	0	0.332635319	0.332635319	mode-selective;100_cm-1_cutoff_not_triggered
+ads_OOH	0	0	0.335276852	0.335276852	mode-selective;56.069290_cm-1_replaced_by_100_cm-1
+gas_H2	-0.299157176	-0.014256169	0.268647455	-0.044765890	ideal_gas_298.15_K_1_bar;internal_vibrations_only
+gas_H2O	-0.383566177	-0.097680135	0.567458427	0.086212115	ideal_gas_298.15_K_1_bar;internal_vibrations_only

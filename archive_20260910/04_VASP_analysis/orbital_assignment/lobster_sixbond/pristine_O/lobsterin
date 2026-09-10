@@ -1,0 +1,13 @@
+skipMadelungEnergy
+COHPstartEnergy -15.0
+COHPendEnergy 5.0
+basisSet pbeVaspFit2015
+useRecommendedBasisFunctions
+gaussianSmearingWidth 0.05
+cohpBetween atom 21 atom 294 orbitalWise
+cohpBetween atom 21 atom 347 orbitalWise
+cohpBetween atom 21 atom 226 orbitalWise
+cohpBetween atom 21 atom 274 orbitalWise
+cohpBetween atom 21 atom 216 orbitalWise
+cohpBetween atom 21 atom 258 orbitalWise
+cohpBetween atom 23 atom 258 orbitalWise

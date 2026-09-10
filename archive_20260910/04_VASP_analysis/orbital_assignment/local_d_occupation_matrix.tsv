@@ -1,0 +1,5 @@
+system	state	active_Co	matrix_available	status	reason
+pristine_OH	*OH	21	no	unavailable	OUTCAR has LDA+U enabled but no printed spin-resolved 5x5 onsite occupation matrix; LDAUPRINT was not enabled.
+pristine_O	*O	21	no	unavailable	OUTCAR has LDA+U enabled but no printed spin-resolved 5x5 onsite occupation matrix; LDAUPRINT was not enabled.
+Al16_OH	*OH	16	no	unavailable	OUTCAR has LDA+U enabled but no printed spin-resolved 5x5 onsite occupation matrix; LDAUPRINT was not enabled.
+Al16_O	*O	16	no	unavailable	OUTCAR has LDA+U enabled but no printed spin-resolved 5x5 onsite occupation matrix; LDAUPRINT was not enabled.

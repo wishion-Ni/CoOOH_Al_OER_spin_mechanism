@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:14px}.title{font-size:21px;font-weight:700}.sub{font-size:12px;fill:#444}.label{font-size:13px}.num{font-size:12px;font-weight:700}</style>
+<text x="40" y="34" class="title">Spin and cDFT preview</text>
+<text x="40" y="56" class="sub">Current completed data only. Heatmap uses lowest-energy spin state for each Al16 adsorbed intermediate.</text>
+<text x="55" y="82" class="label">A. Local spin heatmap</text>
+<text x="225" y="88" class="label">*OH</text>
+<text x="317" y="88" class="label">*O</text>
+<text x="409" y="88" class="label">*OOH</text>
+<text x="55" y="131" class="label">Co13 adjAl</text>
+<rect x="195" y="100" width="44.0" height="54" fill="rgb(119,156,255)" stroke="#bbb"/>
+<rect x="239.0" y="100" width="44.0" height="54" fill="rgb(255,243,243)" stroke="#bbb"/>
+<text x="201" y="122" class="num">M6</text>
+<text x="200" y="142" class="sub">-1.8</text>
+<text x="245" y="142" class="sub">+0.2</text>
+<rect x="287" y="100" width="44.0" height="54" fill="rgb(133,166,255)" stroke="#bbb"/>
+<rect x="331.0" y="100" width="44.0" height="54" fill="rgb(192,209,255)" stroke="#bbb"/>
+<text x="293" y="122" class="num">M1</text>
+<text x="292" y="142" class="sub">-1.6</text>
+<text x="337" y="142" class="sub">-0.8</text>
+<rect x="379" y="100" width="44.0" height="54" fill="rgb(81,128,255)" stroke="#bbb"/>
+<rect x="423.0" y="100" width="44.0" height="54" fill="rgb(184,203,255)" stroke="#bbb"/>
+<text x="385" y="122" class="num">M6</text>
+<text x="384" y="142" class="sub">-2.3</text>
+<text x="429" y="142" class="sub">-1.0</text>
+<text x="55" y="193" class="label">Al47</text>
+<rect x="195" y="162" width="88" height="54" fill="#f4f4f4" stroke="#ccc"/>
+<text x="215" y="193" class="sub">n/a</text>
+<rect x="287" y="162" width="44.0" height="54" fill="rgb(255,252,252)" stroke="#bbb"/>
+<rect x="331.0" y="162" width="44.0" height="54" fill="rgb(158,184,255)" stroke="#bbb"/>
+<text x="293" y="184" class="num">M5</text>
+<text x="292" y="204" class="sub">+0.0</text>
+<text x="337" y="204" class="sub">-1.3</text>
+<rect x="379" y="162" width="44.0" height="54" fill="rgb(255,254,254)" stroke="#bbb"/>
+<rect x="423.0" y="162" width="44.0" height="54" fill="rgb(193,210,255)" stroke="#bbb"/>
+<text x="385" y="184" class="num">M2</text>
+<text x="384" y="204" class="sub">+0.0</text>
+<text x="429" y="204" class="sub">-0.8</text>
+<text x="55" y="255" class="label">Co7 adjAl</text>
+<rect x="195" y="224" width="44.0" height="54" fill="rgb(121,157,255)" stroke="#bbb"/>
+<rect x="239.0" y="224" width="44.0" height="54" fill="rgb(255,243,243)" stroke="#bbb"/>
+<text x="201" y="246" class="num">M6</text>
+<text x="200" y="266" class="sub">-1.8</text>
+<text x="245" y="266" class="sub">+0.2</text>
+<rect x="287" y="224" width="88" height="54" fill="#f4f4f4" stroke="#ccc"/>
+<text x="307" y="255" class="sub">n/a</text>
+<rect x="379" y="224" width="44.0" height="54" fill="rgb(255,92,92)" stroke="#bbb"/>
+<rect x="423.0" y="224" width="44.0" height="54" fill="rgb(184,203,255)" stroke="#bbb"/>
+<text x="385" y="246" class="num">M2</text>
+<text x="384" y="266" class="sub">+2.3</text>
+<text x="429" y="266" class="sub">-1.0</text>
+<text x="55" y="317" class="label">Co19 far</text>
+<rect x="195" y="286" width="88" height="54" fill="#f4f4f4" stroke="#ccc"/>
+<text x="215" y="317" class="sub">n/a</text>
+<rect x="287" y="286" width="44.0" height="54" fill="rgb(77,125,255)" stroke="#bbb"/>
+<rect x="331.0" y="286" width="44.0" height="54" fill="rgb(207,220,255)" stroke="#bbb"/>
+<text x="293" y="308" class="num">M5</text>
+<text x="292" y="328" class="sub">-2.4</text>
+<text x="337" y="328" class="sub">-0.6</text>
+<rect x="379" y="286" width="44.0" height="54" fill="rgb(241,245,255)" stroke="#bbb"/>
+<rect x="423.0" y="286" width="44.0" height="54" fill="rgb(184,203,255)" stroke="#bbb"/>
+<text x="385" y="308" class="num">M4</text>
+<text x="384" y="328" class="sub">-0.2</text>
+<text x="429" y="328" class="sub">-0.9</text>
+<text x="195" y="358" class="sub">Each cell: left=active atom spin, right=adsorbate spin; label=M multiplicity.</text>
+<rect x="55" y="405" width="45" height="18" fill="rgb(70,120,255)" stroke="#ddd"/>
+<rect x="100" y="405" width="45" height="18" fill="rgb(162,187,255)" stroke="#ddd"/>
+<rect x="145" y="405" width="45" height="18" fill="rgb(255,255,255)" stroke="#ddd"/>
+<rect x="190" y="405" width="45" height="18" fill="rgb(255,167,167)" stroke="#ddd"/>
+<rect x="235" y="405" width="45" height="18" fill="rgb(255,80,80)" stroke="#ddd"/>
+<text x="55" y="441" class="sub">negative spin</text><text x="235" y="441" class="sub">positive spin</text>
+<text x="600" y="82" class="label">B. cDFT constrained-state energy</text>
+<line x1="655" y1="360" x2="1075" y2="360" stroke="#333"/>
+<line x1="655" y1="100" x2="655" y2="360" stroke="#333"/>
+<line x1="650" y1="360.0" x2="1075" y2="360.0" stroke="#eee"/>
+<text x="618" y="364.0" class="sub">0.0</text>
+<line x1="650" y1="260.0" x2="1075" y2="260.0" stroke="#eee"/>
+<text x="618" y="264.0" class="sub">0.5</text>
+<line x1="650" y1="160.0" x2="1075" y2="160.0" stroke="#eee"/>
+<text x="618" y="164.0" class="sub">1.0</text>
+<line x1="674.1" y1="360" x2="674.1" y2="365" stroke="#333"/>
+<text x="666.1" y="382" class="sub">-2</text>
+<line x1="769.5" y1="360" x2="769.5" y2="365" stroke="#333"/>
+<text x="761.5" y="382" class="sub">-1</text>
+<line x1="865.0" y1="360" x2="865.0" y2="365" stroke="#333"/>
+<text x="857.0" y="382" class="sub">0</text>
+<line x1="960.5" y1="360" x2="960.5" y2="365" stroke="#333"/>
+<text x="952.5" y="382" class="sub">1</text>
+<line x1="1055.9" y1="360" x2="1055.9" y2="365" stroke="#333"/>
+<text x="1047.9" y="382" class="sub">2</text>
+<text x="755" y="408" class="sub">target magnetization</text>
+<text x="596" y="120" class="sub" transform="rotate(-90 596,120)">Delta E vs unconstrained / eV</text>
+<circle cx="1055.9" cy="204.6" r="7" fill="#d62728" stroke="#222"/>
+<text x="1065.9" y="196.6" class="sub">metal +2</text>
+<text x="1065.9" y="212.6" class="sub">0.78 eV</text>
+<circle cx="769.5" cy="170.5" r="7" fill="#1f77b4" stroke="#222"/>
+<text x="779.5" y="162.5" class="sub">ads -1</text>
+<text x="779.5" y="178.5" class="sub">0.95 eV</text>
+<text x="655" y="438" class="sub">Current cDFT points: Co13-adjAl *O only. More points are running.</text>
+<rect x="655" y="458" width="420" height="86" fill="#fafafa" stroke="#ddd"/>
+<text x="670" y="480" class="sub">Interpretation preview:</text>
+<text x="670" y="500" class="sub">Co13 +2 spin constraint costs ~0.78 eV.</text>
+<text x="670" y="520" class="sub">O* -1 spin constraint costs ~0.95 eV.</text>
+<text x="670" y="540" class="sub">Natural state favors coupled Co/O spin, not isolated high-spin Co.</text>
+</svg>

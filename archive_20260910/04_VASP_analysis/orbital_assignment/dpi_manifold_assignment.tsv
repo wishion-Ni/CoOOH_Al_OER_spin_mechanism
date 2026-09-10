@@ -1,0 +1,13 @@
+system	feature_id	spin	E_EF_eV	axial_fraction	spatial_assignment	local_pi_assignment	bonding_sign	confidence
+pristine_OH	UF2	up	-0.72963345	0.29633005	bridge-neighbor/framework	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	strongly antibonding	medium for spatial span; low for local pi symmetry
+pristine_OH	UF3	up	-1.36163345	0.40533197	bridge-neighbor/framework	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	strongly antibonding	medium for spatial span; low for local pi symmetry
+pristine_OH	DF2	down	-0.94063345	0.55679957	mixed axial/equatorial	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	strongly antibonding	medium for spatial span; low for local pi symmetry
+pristine_O	UF2	up	-0.71022495	0.35541980	bridge-neighbor/framework	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	strongly antibonding	medium for spatial span; low for local pi symmetry
+pristine_O	UF3	up	-1.34522495	0.26601214	bridge-neighbor/framework	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	weakly antibonding	medium for spatial span; low for local pi symmetry
+pristine_O	DF3	down	-1.02722495	0.37731707	bridge-neighbor/framework	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	strongly antibonding	medium for spatial span; low for local pi symmetry
+pristine_O	DF4	down	-1.76922495	0.44072639	mixed axial/equatorial	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	bonding	medium for spatial span; low for local pi symmetry
+Al16_OH	UF2	up	-1.43315882	0.29371867	equatorial/framework	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	weakly antibonding	medium for spatial span; low for local pi symmetry
+Al16_OH	UF3	up	-1.76415882	0.34680628	equatorial/framework	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	weakly antibonding	medium for spatial span; low for local pi symmetry
+Al16_OH	DF2	down	-1.21215882	0.56495639	mixed axial/equatorial	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	bonding	medium for spatial span; low for local pi symmetry
+Al16_O	UF3	up	-1.87882564	0.45028608	mixed axial/equatorial	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	approximately nonbonding	medium for spatial span; low for local pi symmetry
+Al16_O	DF2	down	-1.87882564	0.42595776	mixed axial/equatorial	unresolved: orbitalWise labels are global-axis and phase/cross terms are unavailable	bonding	medium for spatial span; low for local pi symmetry

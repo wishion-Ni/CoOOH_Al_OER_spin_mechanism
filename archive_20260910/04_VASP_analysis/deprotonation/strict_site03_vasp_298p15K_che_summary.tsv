@@ -1,0 +1,2 @@
+system	temperature_K	pressure_bar	dG1_eV	dG2_eV	dG3_eV	dG4_eV	PDS	limiting_potential_V	overpotential_V	literature_target_overpotential_V	deviation_V	tolerance_V	reproduction_gate	status
+strict_undoped_site03	298.15	1.0	1.755822390	2.030710620	0.669871268	0.463595722	OH_to_O	2.030710620	0.800710620	1.000000000	-0.199289380	0.200000000	PASS_BOUNDARY	VALID_STRICT_THERMO

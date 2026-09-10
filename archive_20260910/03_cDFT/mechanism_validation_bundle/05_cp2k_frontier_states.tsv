@@ -1,0 +1,3 @@
+system	state	frontier_window	MO_eigenvalues_available	spin_resolved_PDOS_available	Oads_2p_weight	Coact_3d_weight	neighbor_weight	interpretation	source_file
+pristine	*OH	HOMO-2 eV to LUMO+0.5 eV requested	NO	NO				Existing baseline output contains populations but no MO eigenvalue list, PDOS, LDOS, or orbital projections; defer symmetry and bonding character to VASP/LOBSTER.	artifacts/mechanism_validation_sources_20260901/cp2k_undoped_OH_baseline.out
+Al16	*OH	HOMO-2 eV to LUMO+0.5 eV requested	NO	NO				Existing baseline output contains populations but no MO eigenvalue list, PDOS, LDOS, or orbital projections; defer symmetry and bonding character to VASP/LOBSTER.	artifacts/mechanism_validation_sources_20260901/cp2k_Al16_OH_baseline.out

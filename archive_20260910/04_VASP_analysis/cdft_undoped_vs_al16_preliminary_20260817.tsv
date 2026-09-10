@@ -1,0 +1,23 @@
+panel	state	constraint	system	value	unit	status
+A	OH	baseline_charge	undoped	-1.356000	e	valid
+A	O	baseline_charge	undoped	-1.574000	e	valid
+A	OOH	baseline_charge	undoped	-1.281000	e	valid
+A	OH	baseline_charge	Al16	-1.458000	e	valid
+A	O	baseline_charge	Al16	-1.470000	e	valid
+A	OOH	baseline_charge	Al16	-1.379000	e	valid
+B	OH	baseline_spin	undoped	3.215000	e	valid
+B	O	baseline_spin	undoped	2.394000	e	valid
+B	OOH	baseline_spin	undoped	3.176000	e	valid
+B	OH	baseline_spin	Al16	3.224000	e	valid
+B	O	baseline_spin	Al16	2.776000	e	valid
+B	OOH	baseline_spin	Al16	3.146000	e	valid
+C	OH	OH_Co_Nm1	undoped	4.913867	eV	valid
+C	OH	OH_Co_Np1	undoped	4.397179	eV	cleanup pending
+C	OH	OH_fragment_Np1	undoped	3.216547	eV	valid
+C	O	O_Co_Nm1	undoped	5.255932	eV	cleanup pending
+C	O	O_Co_Np1	undoped	4.822150	eV	valid
+C	OH	OH_Co_Nm1	Al16	4.889379	eV	valid
+C	OH	OH_Co_Np1	Al16	4.454942	eV	valid
+C	OH	OH_fragment_Np1	Al16	3.771411	eV	valid
+C	O	O_Co_Nm1	Al16	5.146837	eV	valid
+C	O	O_Co_Np1	Al16	4.141331	eV	valid

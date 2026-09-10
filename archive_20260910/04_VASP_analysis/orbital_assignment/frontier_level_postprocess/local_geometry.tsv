@@ -1,0 +1,35 @@
+system	state	record_type	rank	atom1	atom2	role	distance_A	vector_x_A	vector_y_A	vector_z_A	unit_x	unit_y	unit_z	note
+pristine_OH	*OH	Coact_nearest_O	1	Co21	O295	spectator_O	1.86817064	1.03100711	0.98133254	1.20998857	0.55188059	0.52529063	0.64768632	minimum-image Coact to O vector
+pristine_OH	*OH	Coact_nearest_O	2	Co21	O348	Oads	1.87588360	-1.28257648	0.86812185	1.05844288	-0.68371858	0.46278023	0.56423697	minimum-image Coact to O vector
+pristine_OH	*OH	Coact_nearest_O	3	Co21	O227	spectator_O	1.87822622	-0.36296614	-1.41658213	1.17867908	-0.19324943	-0.75421273	0.62754905	minimum-image Coact to O vector
+pristine_OH	*OH	Coact_nearest_O	4	Co21	O275	spectator_O	1.97964949	-0.10244521	1.74442242	-0.93032656	-0.05174917	0.88117741	-0.46994509	minimum-image Coact to O vector
+pristine_OH	*OH	Coact_nearest_O	5	Co21	O217	spectator_O	1.98922317	-1.54317971	-0.79016147	-0.97532048	-0.77577003	-0.39722113	-0.49030219	minimum-image Coact to O vector
+pristine_OH	*OH	Coact_nearest_O	6	Co21	O259	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image Coact to O vector
+pristine_OH	*OH	explicit_vector	NA	Co21	O348	Oads	1.87588360	-1.28257648	0.86812185	1.05844288	-0.68371858	0.46278023	0.56423697	minimum-image vector; global orbital axes were not rotated
+pristine_OH	*OH	explicit_vector	NA	Co21	O259	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image vector; global orbital axes were not rotated
+pristine_OH	*OH	active_Oads-H	NA	O348	H204	active_deprotonated_H	0.97774990	-0.09479384	-0.60652291	0.76101180	-0.09695101	-0.62032520	0.77832971	identified by exact OH/O H-coordinate matching, not assumed from H116
+pristine_O	*O	Coact_nearest_O	1	Co21	O347	Oads	1.74323322	-1.21302156	0.70639741	1.03365538	-0.69584583	0.40522255	0.59295301	minimum-image Coact to O vector
+pristine_O	*O	Coact_nearest_O	2	Co21	O294	spectator_O	1.86817064	1.03100711	0.98133254	1.20998857	0.55188059	0.52529063	0.64768632	minimum-image Coact to O vector
+pristine_O	*O	Coact_nearest_O	3	Co21	O226	spectator_O	1.87822622	-0.36296614	-1.41658213	1.17867908	-0.19324943	-0.75421273	0.62754905	minimum-image Coact to O vector
+pristine_O	*O	Coact_nearest_O	4	Co21	O274	spectator_O	1.97964949	-0.10244521	1.74442242	-0.93032656	-0.05174917	0.88117741	-0.46994509	minimum-image Coact to O vector
+pristine_O	*O	Coact_nearest_O	5	Co21	O216	spectator_O	1.98922317	-1.54317971	-0.79016147	-0.97532048	-0.77577003	-0.39722113	-0.49030219	minimum-image Coact to O vector
+pristine_O	*O	Coact_nearest_O	6	Co21	O258	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image Coact to O vector
+pristine_O	*O	explicit_vector	NA	Co21	O347	Oads	1.74323322	-1.21302156	0.70639741	1.03365538	-0.69584583	0.40522255	0.59295301	minimum-image vector; global orbital axes were not rotated
+pristine_O	*O	explicit_vector	NA	Co21	O258	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image vector; global orbital axes were not rotated
+Al16_OH	*OH	Coact_nearest_O	1	Co16	O295	spectator_O	1.86817064	1.03100711	0.98133254	1.20998857	0.55188059	0.52529063	0.64768632	minimum-image Coact to O vector
+Al16_OH	*OH	Coact_nearest_O	2	Co16	O348	Oads	1.87588360	-1.28257648	0.86812185	1.05844288	-0.68371858	0.46278023	0.56423697	minimum-image Coact to O vector
+Al16_OH	*OH	Coact_nearest_O	3	Co16	O227	spectator_O	1.87822622	-0.36296614	-1.41658213	1.17867908	-0.19324943	-0.75421273	0.62754905	minimum-image Coact to O vector
+Al16_OH	*OH	Coact_nearest_O	4	Co16	O275	spectator_O	1.97964949	-0.10244521	1.74442242	-0.93032656	-0.05174917	0.88117741	-0.46994509	minimum-image Coact to O vector
+Al16_OH	*OH	Coact_nearest_O	5	Co16	O217	spectator_O	1.98922317	-1.54317971	-0.79016147	-0.97532048	-0.77577003	-0.39722113	-0.49030219	minimum-image Coact to O vector
+Al16_OH	*OH	Coact_nearest_O	6	Co16	O259	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image Coact to O vector
+Al16_OH	*OH	explicit_vector	NA	Co16	O348	Oads	1.87588360	-1.28257648	0.86812185	1.05844288	-0.68371858	0.46278023	0.56423697	minimum-image vector; global orbital axes were not rotated
+Al16_OH	*OH	explicit_vector	NA	Co16	O259	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image vector; global orbital axes were not rotated
+Al16_OH	*OH	active_Oads-H	NA	O348	H204	active_deprotonated_H	0.97774990	-0.09479384	-0.60652291	0.76101180	-0.09695101	-0.62032520	0.77832971	identified by exact OH/O H-coordinate matching, not assumed from H116
+Al16_O	*O	Coact_nearest_O	1	Co16	O347	Oads	1.74323322	-1.21302156	0.70639741	1.03365538	-0.69584583	0.40522255	0.59295301	minimum-image Coact to O vector
+Al16_O	*O	Coact_nearest_O	2	Co16	O294	spectator_O	1.86817064	1.03100711	0.98133254	1.20998857	0.55188059	0.52529063	0.64768632	minimum-image Coact to O vector
+Al16_O	*O	Coact_nearest_O	3	Co16	O226	spectator_O	1.87822622	-0.36296614	-1.41658213	1.17867908	-0.19324943	-0.75421273	0.62754905	minimum-image Coact to O vector
+Al16_O	*O	Coact_nearest_O	4	Co16	O274	spectator_O	1.97964949	-0.10244521	1.74442242	-0.93032656	-0.05174917	0.88117741	-0.46994509	minimum-image Coact to O vector
+Al16_O	*O	Coact_nearest_O	5	Co16	O216	spectator_O	1.98922317	-1.54317971	-0.79016147	-0.97532048	-0.77577003	-0.39722113	-0.49030219	minimum-image Coact to O vector
+Al16_O	*O	Coact_nearest_O	6	Co16	O258	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image Coact to O vector
+Al16_O	*O	explicit_vector	NA	Co16	O347	Oads	1.74323322	-1.21302156	0.70639741	1.03365538	-0.69584583	0.40522255	0.59295301	minimum-image vector; global orbital axes were not rotated
+Al16_O	*O	explicit_vector	NA	Co16	O258	Obridge	2.06995812	1.58216896	-0.92304704	-0.96408099	0.76434830	-0.44592547	-0.46574903	minimum-image vector; global orbital axes were not rotated

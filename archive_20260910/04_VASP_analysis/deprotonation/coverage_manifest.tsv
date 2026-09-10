@@ -1,0 +1,11 @@
+task	branch	n_deprotonated	relative_dir	removed_H_indices
+0	undoped_control	2	undoped_control/Ocount_02_of_06	204,202
+1	undoped_control	3	undoped_control/Ocount_03_of_06	204,202,199
+2	undoped_control	4	undoped_control/Ocount_04_of_06	204,202,199,200
+3	undoped_control	5	undoped_control/Ocount_05_of_06	204,202,199,200,203
+4	undoped_control	6	undoped_control/Ocount_06_of_06	204,202,199,200,203,201
+5	Al16_adjacent	2	Al16_adjacent/Ocount_02_of_06	204,202
+6	Al16_adjacent	3	Al16_adjacent/Ocount_03_of_06	204,202,199
+7	Al16_adjacent	4	Al16_adjacent/Ocount_04_of_06	204,202,199,200
+8	Al16_adjacent	5	Al16_adjacent/Ocount_05_of_06	204,202,199,200,203
+9	Al16_adjacent	6	Al16_adjacent/Ocount_06_of_06	204,202,199,200,203,201

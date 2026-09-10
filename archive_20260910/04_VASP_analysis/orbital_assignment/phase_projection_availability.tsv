@@ -1,0 +1,4 @@
+source	quantity	available	consequence
+OUTCAR	spin-resolved 5x5 DFT+U occupation matrix	no	No local-axis occupation matrix or natural d orbitals.
+PROCAR	phase/cross-term-resolved projectors	no	No arbitrary local-axis rotation of band-resolved d weights.
+WAVECAR	wavefunction coefficients usable by LOBSTER 5.1.1	yes	Six-bond and active O-H orbital-wise COHP array 111579 submitted.

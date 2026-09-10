@@ -1,0 +1,9 @@
+system	state	branch	E_peak_EF	axial_minusCOHP_signed	equatorial_minusCOHP_signed	axial_fraction	status	confidence	note
+pristine_OH	*OH	e_parallel* majority	-0.20050000	-1.55629000	-0.98497000	0.61240881	six-bond spectral candidate	medium	collective six-bond assignment; not an isolated one-electron MO
+pristine_OH	*OH	e_perp* majority	0.05013000	-0.52424000	-8.20102000	0.06008302	six-bond spectral candidate	medium	collective six-bond assignment; not an isolated one-electron MO
+pristine_O	*O	e_parallel* majority	0.05013000	-5.66572000	-2.06559000	0.73282794	six-bond spectral candidate	medium	collective six-bond assignment; not an isolated one-electron MO
+pristine_O	*O	e_perp* majority	-0.20050000	-0.14262000	-4.08851000	0.03370731	six-bond spectral candidate	medium	collective six-bond assignment; not an isolated one-electron MO
+Al16_OH	*OH	e_parallel* majority	-0.45113000	-3.27526000	-9.40508000	0.25829434	no symmetry-selective peak; strongest mixed fallback	low	collective six-bond assignment; not an isolated one-electron MO
+Al16_OH	*OH	e_perp* majority	-0.45113000	-3.27526000	-9.40508000	0.25829434	six-bond spectral candidate	medium	collective six-bond assignment; not an isolated one-electron MO
+Al16_O	*O	e_parallel* majority	-0.40100000	-7.89964000	-2.74888000	0.74185333	six-bond spectral candidate	medium	collective six-bond assignment; not an isolated one-electron MO
+Al16_O	*O	e_perp* majority	-0.65163000	-0.21536000	-8.98916000	0.02339720	six-bond spectral candidate	medium	collective six-bond assignment; not an isolated one-electron MO
