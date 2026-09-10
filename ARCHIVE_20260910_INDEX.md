@@ -7,5 +7,6 @@ The protocol-compliant snapshot is under [`archive_20260910/`](archive_20260910/
 - Conflicts and limitations: `archive_20260910/00_project_management/conflicting_results.md`
 - Full local inventory: `archive_20260910/00_project_management/archive_manifest.tsv` plus locally retained split files `archive_manifest_part1.tsv` and `archive_manifest_part2.tsv`; transfer limitations are recorded in `upload_exclusions_20260910.md`.
 - Upload exclusions: `archive_20260910/00_project_management/upload_exclusions_20260910.md`
+- Final archive report: `archive_20260910/00_project_management/final_archive_report.md`
 
 The archive is a preservation snapshot. It does not represent a new calculation run and does not promote every historical result to manuscript-level evidence.
