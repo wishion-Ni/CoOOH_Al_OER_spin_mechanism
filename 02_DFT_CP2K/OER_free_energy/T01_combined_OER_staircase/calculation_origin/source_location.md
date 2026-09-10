@@ -2,9 +2,13 @@
 
 ## Local archive records
 
-Primary processed table:
+Primary historical three-site source:
 
-`staging/coooh_al_oer_archive_20260910_v2/02_DFT_CP2K/OER_free_energy/cooh_al16_undoped_oer_steps.csv`
+`staging/coooh_al_oer_archive_20260910_v2/05_analysis_scripts/plot_cp2k_historical_three_sites.py`
+
+Generated historical source table:
+
+`staging/coooh_al_oer_archive_20260910_v2/06_figures/supporting/cp2k_historical_undoped_co7_al47_staircase.tsv`
 
 Supporting records:
 
@@ -23,4 +27,5 @@ The repository archive is the provenance layer for these paths. This T01 package
 
 ## Selection rationale
 
-The active comparison needs one pristine reference, one Co site next to Al, and one Al-site control. `site03_bulk_Co7_adjAl` is selected for the active Al-neighbor Co row because it is the site03 mechanism branch used in the related electronic-structure analysis. `site02_surface_Al47` is selected as the Al-related control. The other historical site rows are listed in `candidate_comparison.md` rather than mixed into the main dataset.
+The active comparison needs one pristine reference, one Co site next to Al, and one Al-site control. The final historical comparison is the three-site set in `plot_cp2k_historical_three_sites.py`: undoped Co32, Al16 Co7_adjAl, and Al16 Al47. The later processed thermochemical table contains a different correction and branch history and is not mixed into this T01 figure.
+
