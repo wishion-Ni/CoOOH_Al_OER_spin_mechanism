@@ -1,110 +1,37 @@
 # Theory Claim Evidence Map
 
-## Purpose
+## Claim 1 — Al substitution selectively modifies the OER pathway at the neighboring Co site
 
-Map possible theoretical statements in the manuscript to the computational evidence available in the repository.
+Primary figure-ready evidence: `02_DFT_CP2K/OER_free_energy/T01_combined_OER_staircase/publication_package/`
 
-This document is a planning tool and does not replace detailed calculation metadata.
+T01 compares pristine Co32, Al16 neighboring Co7, and Al16 Al47 control. The pristine-to-Al-Co comparison changes * -> *OH from 1.199993 to 1.403097 eV (+0.203104 eV) while *OH -> *O changes from 1.793143 to 1.524802 eV (-0.268341 eV).
 
----
+Scope boundary: T01 is the archived historical CP2K electronic-energy comparison without vibrational correction and is labeled `Relative electronic energy (eV)` rather than a strict 298.15 K Gibbs/CHE series.
 
-# Claim 1
+## Claim 2 — Al substitution suppresses Co-centered electronic reconstruction
 
-## Al substitution selectively facilitates *OH → *O conversion
+Required evidence: cDFT charge response, cDFT spin response, pristine vs Al comparison.
 
-Required evidence:
+Primary source: `03_cDFT/`
 
-- OER free-energy staircase
-- intermediate energetics
-- comparison between pristine and Al-containing systems
+Experimental connection: Co-sensitive spectroscopy shows stronger evolution in pristine CoOOH that is suppressed after Al substitution.
 
-Primary source:
+## Claim 3 — Al changes the charge/spin accommodation pathway rather than merely changing net charge
 
-`02_DFT_CP2K/OER_free_energy/`
+Required evidence: cDFT charge/spin response, reaction-induced density, spin density, and Bader only as supporting partition information.
 
----
+## Claim 4 — The altered pathway originates from modified Co-O / O-centered bonding and frontier-state interactions
 
-# Claim 2
+Required evidence: distance-validated COHP/ICOHP, PDOS/frontier-state fingerprints, and orbital/spatial analysis.
 
-## Al substitution suppresses Co-centered electronic reconstruction
+## Claim 5 — Al acts as a promoter/control perturbation rather than the direct active center
 
-Required evidence:
+Primary evidence: the Al47 control pathway included directly in T01 alongside the neighboring-Co pathway.
 
-- cDFT charge response
-- cDFT spin response
-- comparison of pristine and Al systems
+Interpretation boundary: avoid a universal claim about all possible Al-centered mechanisms beyond the sampled model.
 
-Primary source:
+## Current evidence hierarchy
 
-`03_cDFT/`
+Core: T01 OER pathway comparison; cDFT charge/spin response; reaction-induced electronic/spin redistribution.
 
-Experimental connection:
-
-TAS observation of reduced Co response after Al substitution.
-
----
-
-# Claim 3
-
-## Al changes the pathway of charge/spin redistribution rather than simply changing charge density
-
-Required evidence:
-
-- reaction density
-- spin density
-- cDFT analysis
-- careful interpretation of Bader results
-
-Important limitation:
-
-Avoid claiming formal oxidation states only from charge partitioning.
-
----
-
-# Claim 4
-
-## The altered pathway originates from modified bonding/orbital interactions
-
-Required evidence:
-
-- COHP
-- ICOHP
-- PDOS
-- orbital analysis
-
-Required question:
-
-Which Co-O/O-centered interactions stabilize the *OH → *O transition?
-
----
-
-# Claim 5
-
-## Al is a promoter rather than the direct active center
-
-Required evidence:
-
-- Al-site control OER calculation
-- comparison with neighboring Co active site
-
-Primary source:
-
-OER staircase control calculations.
-
----
-
-# Current evidence hierarchy
-
-## Core evidence
-
-1. OER energetics
-2. cDFT charge/spin response
-3. Reaction-induced electronic redistribution
-
-## Mechanistic support
-
-4. COHP/orbital analysis
-5. PDOS/d-band analysis
-6. Bader charge
-
-The strongest conclusions should be based on the core evidence and supported by secondary analyses.
+Support: validated COHP/ICOHP and orbital fingerprints; PDOS/frontier-state analysis; Bader charge as supporting context.

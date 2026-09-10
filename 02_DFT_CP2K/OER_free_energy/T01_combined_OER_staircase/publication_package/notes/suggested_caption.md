@@ -1,0 +1,1 @@
+OER relative electronic-energy profiles for pristine CoOOH, the Al-substituted neighboring Co site, and the Al-site control along the conventional reaction coordinate. Values on the dashed connectors denote the energy change of each elementary step in eV.

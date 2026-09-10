@@ -1,0 +1,11 @@
+figure_id,module,short_title,status,priority,canonical_path,main_message,recommended_use
+T01,thermodynamics,OER staircase comparison,figure_ready,highest,02_DFT_CP2K/OER_free_energy/T01_combined_OER_staircase/publication_package,Three-site pathway comparison linking pristine Co32 Al-modified neighboring Co7 and Al47 control,main-text candidate
+C01,cDFT,Active-Co charge response,to_prepare,highest,03_cDFT/OH_to_O_spin_response,Al suppresses the Co-centered constrained charge response during *OH to *O,main-text candidate
+C02,cDFT,Adsorbate-O charge response,candidate,medium,03_cDFT/OH_to_O_spin_response,O response remains important while Co response is redistributed,supporting or combined with C01
+C03,cDFT,Active-Co spin response,to_prepare,highest,03_cDFT/OH_to_O_spin_response,Al suppresses strong Co-centered spin reconstruction,main-text candidate
+C04,cDFT,O-involved spin response,to_prepare,high,03_cDFT/OH_to_O_spin_response,Al redirects the spin-polarized response toward an O-involved pathway,main-text or supporting
+V01,VASP,Validated Co-O COHP/ICOHP comparison,to_prepare,high,04_VASP_analysis,Validated bonding analysis supports the origin of altered Co-O response,main-text or supporting
+V02,VASP,Reaction-induced density redistribution,to_prepare,high,04_VASP_analysis/charge_density_difference,Spatial density redistribution complements cDFT response,supporting or main-text
+V03,VASP,Spin-density rendering,to_prepare,high,04_VASP_analysis,Spatial spin pattern supports the spin-reorganization interpretation,supporting or main-text
+V04,VASP,PDOS/frontier-state fingerprint,candidate,medium,04_VASP_analysis,Frontier-state character supports the bonding mechanism without raw-band-index claims,supporting
+V05,VASP,Bader charge comparison,candidate,low,04_VASP_analysis,Net charge partition is supporting context and does not define oxidation state,SI/supporting
