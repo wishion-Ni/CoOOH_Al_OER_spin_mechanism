@@ -1,0 +1,1 @@
+# CoOOH_Al_OER_spin_mechanism
