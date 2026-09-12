@@ -27,8 +27,8 @@ jobs:
           python-version: '3.11'
       - name: Install plotting dependencies
         run: pip install numpy pandas matplotlib
-      - name: Render cDFT figures
-        run: python 03_cDFT/OH_to_O_spin_response/publication_package/plotting/plot_C01_C02.py
+      - name: Render cDFT four-part figures
+        run: python 03_cDFT/OH_to_O_spin_response/publication_package/plotting/plot_cdft_four_part.py
       - name: Commit rendered outputs
         run: |
           git config user.name 'github-actions[bot]'
@@ -37,7 +37,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No rendered figure changes.'
           else
-            git commit -m 'Render cDFT manuscript figure outputs'
+            git commit -m 'Render cDFT four-part manuscript figure outputs'
             git pull --rebase origin main
             git push origin main
           fi

@@ -1,21 +1,44 @@
-# cDFT *OH -> *O manuscript figure package
+# cDFT *OH -> *O publication package — four-part structure
 
-This package promotes the most useful existing CP2K population analysis into standalone manuscript-ready theory subfigures.
+This package organizes the existing CP2K/cDFT evidence into four standalone manuscript subfigure materials with distinct physical content.
 
-- `C01_local_electron_population_response`: active-Co and adsorbate-O electron-population response.
-- `C02_local_spin_response`: active-Co and adsorbate-O local-spin response.
-- `C03_cdft_constraint_penalties.csv`: supporting cDFT localization/spin penalty table; not yet promoted to a standalone main-text figure.
+## Figure set
 
-Outputs are sized as individual manuscript subfigures and include vector/raster formats plus software-neutral source data.
+- **C01 — Charge redistribution**: total local electron-population change, ΔN = N(*O) − N(*OH), for Coact, Oads, Obridge and neighboring Co/Al. Hirshfeld and Mulliken are both shown to expose partition sensitivity.
+- **C02 — Local-spin evolution**: local spin moments for *OH and *O, with the strongest mechanistic changes emphasized at Coact and Oads.
+- **C03 — Spin-change partition**: Hirshfeld ΔNα and ΔNβ for Coact and Oads, resolving local spin changes into spin-channel population redistribution.
+- **C04 — Constrained-state fingerprints for *O**: valid *O cDFT localization/spin constraint penalties for Co-only N±1, Co+adsorbate N±1, and Co-only M+2 branches.
 
-## Scientific scope
+## Interpretation hierarchy
 
-C01/C02 compare the selected *OH and *O CP2K solutions. They are intended to test whether Al substitution redistributes the local electronic response away from the active Co and toward an O-involved pathway.
+Together the four panels support the sequence:
 
-## Important interpretation boundary
+`where charge redistributes -> how local moments evolve -> which spin channels carry the change -> energetic fingerprints of alternative constrained responses`
 
-The selected *O calculations use a globally lower multiplicity than *OH in both materials. Therefore these plots characterize local redistribution within the selected *OH/*O states and must not be presented as independent proof that oxidation spontaneously selects the lower-spin branch.
+The safest mechanistic conclusion is that Al substitution suppresses Co-centered electronic/spin reconstruction and redirects the selected *OH -> *O response toward a more oxygen-involved pathway.
 
-The CP2K Oads local-spin sign reversal in Al16 is robust across Mulliken/Hirshfeld partitions but is not reproduced by VASP/LOBSTER. Main-text wording should emphasize `O-centered spin reorganization`; the sign reversal is a method-dependent detail.
+## Critical limitations
 
-cDFT constraint penalties are localization/spin penalties, not CHE free energies, kinetic barriers, or applied potentials.
+1. The selected *O calculations use a lower imposed total multiplicity than *OH in both materials. C02/C03 therefore characterize redistribution within the selected electronic solutions; they do not independently prove that oxidation spontaneously selects the lower-spin branch.
+2. The Al16 Oads local-spin sign reversal is robust within CP2K across Hirshfeld/Mulliken partitions but is not reproduced by VASP/LOBSTER. Main-text wording should emphasize **O-centered spin reorganization**, not a method-independent spin reversal.
+3. C04 values are **cDFT constraint penalties**. They are not CHE reaction free energies, kinetic barriers, or applied potentials.
+4. The rejected Al16 M−2 branch is excluded from C04 because of a discontinuous spin branch.
+
+## Source provenance
+
+Primary archived sources:
+
+- `archive_20260910/03_cDFT/mechanism_validation_bundle/01_cp2k_absolute_populations.tsv`
+- `archive_20260910/03_cDFT/mechanism_validation_bundle/03_cp2k_spin_resolved_changes.tsv`
+- `archive_20260910/03_cDFT/mechanism_validation_bundle/04_cp2k_cdft_constraints.tsv`
+- `archive_20260910/03_cDFT/mechanism_validation_stage2/mechanism_stage2_for_chatgpt.md`
+- `archive_20260910/03_cDFT/mechanism_validation_stage2/stage2_04_Co_spin_state_relaxation.tsv`
+
+## Deliverables
+
+- `source_data/`: software-neutral CSV tables.
+- `plotting/plot_cdft_four_part.py`: reproducible plotting script.
+- `figures/`: publication-sized independent subfigure exports.
+- `notes/`: interpretation boundaries and suggested captions.
+
+The script regenerates PNG, TIFF, PDF, SVG and EPS outputs. To avoid unnecessary repository growth, TIFF files need not be versioned if the script and source data are retained.

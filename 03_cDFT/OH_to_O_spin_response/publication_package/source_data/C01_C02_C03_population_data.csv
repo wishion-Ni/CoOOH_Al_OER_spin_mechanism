@@ -1,0 +1,17 @@
+system,atom_role,element,partition,delta_N_alpha_e,delta_N_beta_e,delta_N_total_e,OH_spin_muB,O_spin_muB,delta_spin_muB
+Pristine CoOOH,Coact,Co,Hirshfeld,-0.301,0.52,0.219,3.215,2.394,-0.821
+Pristine CoOOH,Oads,O,Hirshfeld,-0.267,-0.197,-0.464,0.607,0.537,-0.07
+Pristine CoOOH,Obridge,O,Hirshfeld,-0.12,0.123,0.003,0.443,0.201,-0.242
+Pristine CoOOH,neighbor,Co,Hirshfeld,-0.013,-0.007,-0.02,3.196,3.189,-0.007
+Al-substituted,Coact,Co,Hirshfeld,-0.218,0.23,0.012,3.224,2.776,-0.448
+Al-substituted,Oads,O,Hirshfeld,-0.586,0.159,-0.427,0.336,-0.408,-0.744
+Al-substituted,Obridge,O,Hirshfeld,-0.001,0.041,0.04,0.355,0.312,-0.043
+Al-substituted,neighbor,Al,Hirshfeld,-0.001,0.002,0.001,0.031,0.028,-0.003
+Pristine CoOOH,Coact,Co,Mulliken,-0.326395,0.473587,0.147192,3.254625,2.454644,-0.799981
+Pristine CoOOH,Oads,O,Mulliken,-0.102599,-0.039784,-0.142383,0.627114,0.564299,-0.062815
+Pristine CoOOH,Obridge,O,Mulliken,-0.183974,0.088534,-0.09544,0.387272,0.114765,-0.272507
+Pristine CoOOH,neighbor,Co,Mulliken,0.009051,0.000128,0.009179,3.295324,3.304247,0.008923
+Al-substituted,Coact,Co,Mulliken,-0.138603,0.18884,0.050237,3.204646,2.877203,-0.327443
+Al-substituted,Oads,O,Mulliken,-0.552736,0.249423,-0.303313,0.339262,-0.462897,-0.802159
+Al-substituted,Obridge,O,Mulliken,-0.035804,0.001944,-0.03386,0.322186,0.284439,-0.037747
+Al-substituted,neighbor,Al,Mulliken,0.016001,0.02197,0.037971,0.054459,0.04849,-0.005969
