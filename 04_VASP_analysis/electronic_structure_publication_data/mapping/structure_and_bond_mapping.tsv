@@ -1,0 +1,14 @@
+system	state	source_structure	Coact_index	Oads_index	Obridge_index	neighbor_index	neighbor_element	pair_role	atom1_index	atom1_element	atom2_index	atom2_element	distance_A	validation_status	validation_note
+Al16	*OH	raw_minimal/Al16__OH/POSCAR.lobster.vasp	16	348	259	51	Al	Coact-Obridge	16	Co	259	O	2.069958	validated	dynamic geometry mapping; ICOHPLIST distance 2.069960 A
+Al16	*OH	raw_minimal/Al16__OH/POSCAR.lobster.vasp	16	348	259	51	Al	neighbor-Obridge	51	Al	259	O	2.112332	validated	dynamic geometry mapping; ICOHPLIST distance 2.112330 A
+Al16	*OH	raw_minimal/Al16__OH/POSCAR.lobster.vasp	16	348	259	51	Al	Coact-Oads	16	Co	348	O	1.875883	validated	dynamic geometry mapping; ICOHPLIST distance 1.875880 A
+pristine	*O	raw_minimal/pristine__O/POSCAR.lobster.vasp	21	347	258	23	Co	Coact-Obridge	21	Co	258	O	2.069958	validated	dynamic geometry mapping; ICOHPLIST distance 2.069960 A
+pristine	*O	raw_minimal/pristine__O/POSCAR.lobster.vasp	21	347	258	23	Co	neighbor-Obridge	23	Co	258	O	2.112332	validated	dynamic geometry mapping; ICOHPLIST distance 2.112330 A
+pristine	*O	raw_minimal/pristine__O/POSCAR.lobster.vasp	21	347	258	23	Co	Coact-Oads	21	Co	347	O	1.743233	validated	dynamic geometry mapping; ICOHPLIST distance 1.743230 A
+Al16	*O	raw_minimal/Al16__O/POSCAR.lobster.vasp	16	347	258	51	Al	Coact-Obridge	16	Co	258	O	2.069958	validated	dynamic geometry mapping; ICOHPLIST distance 2.069960 A
+Al16	*O	raw_minimal/Al16__O/POSCAR.lobster.vasp	16	347	258	51	Al	neighbor-Obridge	51	Al	258	O	2.112332	validated	dynamic geometry mapping; ICOHPLIST distance 2.112330 A
+Al16	*O	raw_minimal/Al16__O/POSCAR.lobster.vasp	16	347	258	51	Al	Coact-Oads	16	Co	347	O	1.743233	validated	dynamic geometry mapping; ICOHPLIST distance 1.743230 A
+pristine	*OH	raw_minimal/pristine__OH/POSCAR.lobster.vasp	21	348	259	23	Co	Coact-Obridge	21	Co	259	O	2.069958	validated	dynamic geometry mapping; ICOHPLIST distance 2.069960 A
+pristine	*OH	raw_minimal/pristine__OH/POSCAR.lobster.vasp	21	348	259	23	Co	neighbor-Obridge	23	Co	259	O	2.112332	validated	dynamic geometry mapping; ICOHPLIST distance 2.112330 A
+pristine	*OH	raw_minimal/pristine__OH/POSCAR.lobster.vasp	21	348	259	23	Co	Coact-Oads	21	Co	348	O	1.875883	validated	dynamic geometry mapping; ICOHPLIST distance 1.875880 A
+

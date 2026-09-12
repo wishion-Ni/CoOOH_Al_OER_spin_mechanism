@@ -1,50 +1,18 @@
-# Electronic-structure publication data staging area
+# Synchronized electronic-structure data
 
-This directory is the canonical synchronization target for compact, validated source data used to prepare publication-quality COHP/ICOHP and PDOS figures.
+This directory is the compact synchronization package for the four formal
+states `pristine__OH`, `pristine__O`, `Al16__OH` and `Al16__O`.
 
-The detailed extraction task is defined in:
+- `mapping/structure_and_bond_mapping.tsv`: geometry-checked atom and bond roles.
+- `COHP/source_data/cohp_curves_<state>.tsv`: long-format spin-resolved pCOHP curves, one shard per state.
+- `COHP/source_data/icohp_summary.tsv`: spin-resolved and total ICOHP values.
+- `COHP/source_data/lobster_quality.tsv`: spilling, basis and warning records.
+- `PDOS/source_data/pdos_curves_<state>.tsv`: compact native VASP site/orbital PDOS, one shard per state.
+- `PDOS/source_data/pdos_site_mapping.tsv`: PDOS site roles.
+- `source_manifest.tsv`: source provenance, sizes and hashes.
+- `previews/`: sanity-check plots, not manuscript figures.
 
-`00_project_management/codex_prompts/SYNC_COHP_PDOS_DATA.md`
+Run from the repository root:
 
-Expected structure after synchronization:
+`python tools/validate_cohp_pdos_sync.py`
 
-```text
-04_VASP_analysis/electronic_structure_publication_data/
-├── README.md
-├── PROVENANCE.md
-├── source_manifest.tsv
-├── MISSING_DATA_REPORT.md              # only if needed
-├── mapping/
-│   └── structure_and_bond_mapping.tsv
-├── COHP/
-│   └── source_data/
-│       ├── cohp_curves.tsv
-│       ├── icohp_summary.tsv
-│       └── lobster_quality.tsv
-├── PDOS/
-│   └── source_data/
-│       ├── pdos_curves.tsv
-│       └── pdos_site_mapping.tsv
-├── raw_minimal/                        # optional; only small useful source files
-└── previews/                           # optional sanity-check plots, not final figures
-```
-
-## Scientific constraints
-
-- COHP pairs must be validated against the structure actually used by the corresponding LOBSTER run.
-- Earlier historical pair mappings are not automatically trusted.
-- Preserve raw COHP sign and also provide `-pCOHP` / `-ICOHP` columns for publication plotting.
-- PDOS energies must be aligned to `E_F = 0 eV`.
-- Keep spin-resolved DOS values positive in source tables; mirror spin-down only during plotting.
-- Do not infer formal oxidation states from PDOS/Bader/COHP alone.
-- Do not assign exact `eg/t2g` or other orbital classes unless independently validated in the appropriate local frame.
-
-## Validation
-
-Run from repository root:
-
-```bash
-python tools/validate_cohp_pdos_sync.py
-```
-
-A passing validator is necessary but not sufficient for manuscript use; pair mapping, projection quality, provenance and physical interpretation must also be reviewed.
