@@ -1,0 +1,38 @@
+name: Render cDFT manuscript figures
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '03_cDFT/OH_to_O_spin_response/publication_package/source_data/**'
+      - '03_cDFT/OH_to_O_spin_response/publication_package/plotting/**'
+      - '.github/workflows/render_cdft_figures.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install plotting dependencies
+        run: pip install numpy pandas matplotlib
+      - name: Render cDFT figures
+        run: python 03_cDFT/OH_to_O_spin_response/publication_package/plotting/plot_C01_C02.py
+      - name: Commit rendered outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 03_cDFT/OH_to_O_spin_response/publication_package/figures
+          if git diff --cached --quiet; then
+            echo 'No rendered figure changes.'
+          else
+            git commit -m 'Render cDFT manuscript figure outputs'
+            git push
+          fi
