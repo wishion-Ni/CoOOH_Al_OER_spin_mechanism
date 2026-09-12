@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: render-cdft-main
+  cancel-in-progress: true
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -34,5 +38,6 @@ jobs:
             echo 'No rendered figure changes.'
           else
             git commit -m 'Render cDFT manuscript figure outputs'
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
