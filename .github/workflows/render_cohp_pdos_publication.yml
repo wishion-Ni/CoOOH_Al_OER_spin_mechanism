@@ -6,6 +6,7 @@ on:
     paths:
       - '04_VASP_analysis/electronic_structure_publication_data/**'
       - '04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_cohp_pdos_publication.py'
+      - '04_VASP_analysis/electronic_structure_publication_figures/plotting/compress_tiff_outputs.py'
       - '.github/workflows/render_cohp_pdos_publication.yml'
   workflow_dispatch:
 
@@ -34,6 +35,9 @@ jobs:
 
       - name: Render figures
         run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_cohp_pdos_publication.py
+
+      - name: Compress TIFF outputs
+        run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/compress_tiff_outputs.py
 
       - name: Verify generated PDFs render
         shell: bash
