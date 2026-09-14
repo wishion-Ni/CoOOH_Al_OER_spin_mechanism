@@ -6,6 +6,7 @@ on:
     paths:
       - '04_VASP_analysis/electronic_structure_publication_data/**'
       - '04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_cohp_pdos_publication.py'
+      - '04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_orbital_resolved_pdos.py'
       - '04_VASP_analysis/electronic_structure_publication_figures/plotting/compress_tiff_outputs.py'
       - '.github/workflows/render_cohp_pdos_publication.yml'
   workflow_dispatch:
@@ -33,8 +34,11 @@ jobs:
       - name: Install PDF renderer
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
 
-      - name: Render figures
+      - name: Render publication overview figures
         run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_cohp_pdos_publication.py
+
+      - name: Render orbital-resolved PDOS analysis
+        run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_orbital_resolved_pdos.py
 
       - name: Compress TIFF outputs
         run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/compress_tiff_outputs.py
@@ -63,6 +67,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No rendered-output changes to commit."
           else
-            git commit -m "Render COHP and PDOS publication figures"
+            git commit -m "Render orbital-resolved PDOS publication figures"
             git push
           fi
