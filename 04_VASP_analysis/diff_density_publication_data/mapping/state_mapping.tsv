@@ -1,0 +1,4 @@
+system	case_name	state_O	state_OH	active_Co_index	adsorbate_O_index	bridge_O_index	neighbor_index	neighbor_label	geometry_status
+pristine	undoped_control	*O@*OH_geometry	*OH@*OH_geometry	21	347	258	23	Co(adj)	validated existing same-geometry pair
+Al16	Al16_adjacent	*O@*OH_geometry	*OH@*OH_geometry	16	347	258	51	Al	validated existing same-geometry pair
+
