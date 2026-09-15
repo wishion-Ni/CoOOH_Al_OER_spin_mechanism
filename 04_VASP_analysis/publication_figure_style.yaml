@@ -1,0 +1,31 @@
+font:
+  family: Arial
+  panel_label_pt: 9
+  axis_label_pt: 8
+  tick_label_pt: 7
+  legend_pt: 7
+line:
+  width_pt: 1.0
+  axis_width_pt: 0.8
+export:
+  formats:
+    - pdf
+    - svg
+    - png
+    - tiff
+  dpi: 600
+colors:
+  pristine: "#1f77b4"
+  al_substituted: "#d62788"
+  charge_positive: "#d73027"
+  charge_negative: "#4575b4"
+  spin_positive: "#b2182b"
+  spin_negative: "#2166ac"
+layout:
+  white_background: true
+  grid: false
+  standalone_panels: true
+notes:
+  - Keep panels manuscript-ready and independent.
+  - Do not add infographic conclusion banners.
+  - Do not predefine final manuscript composite figures.
