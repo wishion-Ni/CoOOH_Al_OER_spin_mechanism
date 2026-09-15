@@ -8,3 +8,5 @@ The plotted plane is a common PCA plane through active Co, adsorbate O, bridge O
 
 Source hashes, exact paths and metadata are recorded in `source_manifest.tsv`.
 
+The independent figure renderer is `tools/plot_diff_density_subfigures.py`. It writes paired two-panel and single-panel assets in PNG, lossless Deflate-compressed TIFF, PDF and SVG. Atom labels use a small white isolation box to prevent overlap with contours and framework lines; no article title, caption, panel number or explanatory footer is embedded in the figure assets.
+
