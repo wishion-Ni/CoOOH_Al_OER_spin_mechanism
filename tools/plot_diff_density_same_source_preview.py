@@ -6,6 +6,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 import plot_diff_density_evidence_preview as preview
 from plot_diff_density_subfigures import read_overlay, save_figure
@@ -103,7 +104,9 @@ def main():
             x, y, field = preview.read_field(spec[0], case_name)
             im = preview.style_axis(ax, x, y, field, '', spec[3], spec[4], spec[5], read_overlay()[system], '')
             preview.add_evidence(ax, system, read_overlay()[system], spec[0])
-            cbar = fig.colorbar(im, ax=ax, fraction=.035, pad=.04, shrink=.82)
+            cax = inset_axes(ax, width='3.5%', height='86%', loc='center left',
+                             bbox_to_anchor=(1.04, 0, 1, 1), bbox_transform=ax.transAxes, borderpad=0)
+            cbar = fig.colorbar(im, cax=cax)
             cbar.set_ticks([-spec[4], 0, spec[4]])
             cbar.set_label(spec[3], fontsize=8)
             cbar.ax.tick_params(labelsize=7)
