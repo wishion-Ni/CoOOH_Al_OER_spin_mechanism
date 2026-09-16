@@ -1,0 +1,9 @@
+system,site_role,element,OH_atom_index,OH_bader_electrons,O_atom_index,O_bader_electrons,delta_N_e
+Pristine CoOOH,Co_act,Co,21,7.627093,21,7.652966,0.025873
+Pristine CoOOH,O_ads,O,348,6.618730,347,6.358038,-0.260692
+Pristine CoOOH,O_bridge,O,259,6.889133,258,6.865569,-0.023564
+Pristine CoOOH,Neighbor,Co,23,7.676855,23,7.675405,-0.001450
+Al-substituted CoOOH,Co_act,Co,16,7.645947,16,7.676377,0.030430
+Al-substituted CoOOH,O_ads,O,348,6.650293,347,6.426088,-0.224205
+Al-substituted CoOOH,O_bridge,O,259,6.956695,258,6.956979,0.000284
+Al-substituted CoOOH,Neighbor,Al,51,0.911539,51,0.910879,-0.000660
