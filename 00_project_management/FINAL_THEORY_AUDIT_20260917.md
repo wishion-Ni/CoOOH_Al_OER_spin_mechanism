@@ -128,16 +128,18 @@ Archive preservation is appropriate for provenance, but these files must not be 
 
 ---
 
-## F. Repository-management findings
+## F. Repository-management findings and completed synchronization
 
-Two top-level project documents were stale at the time of this audit:
+Two top-level project documents were stale at the start of this audit:
 
 - the root `README.md` still described T01 as the only current figure-ready result;
 - `00_project_management/THEORY_RESULT_INVENTORY.md` reflected the early T01/C01-C03 stage and did not index the current C01-C05 / V01-V08 delivery set.
 
-These should be synchronized to the current figure manifest so collaborators do not mistake archived or preliminary branches for the formal delivery package.
+**Post-audit action completed:** both files were synchronized to the current figure inventory on 2026-09-17. The root README now points collaborators to the formal manifest and this final audit, while `THEORY_RESULT_INVENTORY.md` now indexes T01, C01-C05 and V01-V08 and distinguishes completed, deliberately unpromoted and genuinely incomplete branches.
 
 `00_project_management/unresolved_questions.md` remains scientifically useful. Its open mechanistic questions are still genuine; the file should be read as a boundary document rather than a list of unfinished plotting tasks.
+
+The manifest retains `figure_ready_draft` for C01-C04. This is a delivery-status label, not evidence of missing source calculations: the publication package already contains source data, reproducible plotting assets and raster/vector outputs. Any future change from `figure_ready_draft` to `figure_ready` should reflect collaborator approval of the exact presentation rather than additional computation.
 
 ---
 
