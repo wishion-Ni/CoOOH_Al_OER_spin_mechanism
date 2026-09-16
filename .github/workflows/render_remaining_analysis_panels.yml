@@ -1,0 +1,88 @@
+name: Render remaining analysis panels V05 V07 V08 C05
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '04_VASP_analysis/electronic_structure_publication_figures/source_data/V05_*'
+      - '04_VASP_analysis/electronic_structure_publication_figures/source_data/V07_*'
+      - '04_VASP_analysis/electronic_structure_publication_figures/source_data/V08_*'
+      - '04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_V05_bader.py'
+      - '04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_V07_neighbor_boundary.py'
+      - '04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_V08_lobster_population.py'
+      - '04_VASP_analysis/electronic_structure_publication_figures/notes/V05_*'
+      - '04_VASP_analysis/electronic_structure_publication_figures/notes/V07_*'
+      - '04_VASP_analysis/electronic_structure_publication_figures/notes/V08_*'
+      - '03_cDFT/OH_to_O_spin_response/publication_package/source_data/C05_*'
+      - '03_cDFT/OH_to_O_spin_response/publication_package/plotting/plot_C05_cdft_state_evolution.py'
+      - '03_cDFT/OH_to_O_spin_response/publication_package/notes/C05_*'
+      - '.github/workflows/render_remaining_analysis_panels.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip numpy pandas matplotlib pillow
+
+      - name: Render V05 Bader
+        run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_V05_bader.py
+
+      - name: Render V07 neighbor boundary
+        run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_V07_neighbor_boundary.py
+
+      - name: Render V08 LOBSTER population
+        run: python 04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_V08_lobster_population.py
+
+      - name: Render C05 cDFT state evolution
+        run: python 03_cDFT/OH_to_O_spin_response/publication_package/plotting/plot_C05_cdft_state_evolution.py
+
+      - name: Verify expected outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          VASP_DIR='04_VASP_analysis/electronic_structure_publication_figures/figures'
+          CDFT_DIR='03_cDFT/OH_to_O_spin_response/publication_package/figures'
+          for stem in V05_bader_charge_response V07_neighbor_frontier_boundary V08a_spin_channel_population_crosscheck V08b_orbital_resolved_population; do
+            for ext in png tif pdf svg eps; do
+              test -s "${VASP_DIR}/${stem}.${ext}"
+            done
+          done
+          for ext in png tif pdf svg eps; do
+            test -s "${CDFT_DIR}/C05_constraint_state_evolution.${ext}"
+          done
+          test -s '04_VASP_analysis/electronic_structure_publication_figures/source_data/V08_spin_channel_summary.csv'
+          echo 'Remaining analysis render verification passed.'
+
+      - name: Commit rendered outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            04_VASP_analysis/electronic_structure_publication_figures/figures/V05_* \
+            04_VASP_analysis/electronic_structure_publication_figures/figures/V07_* \
+            04_VASP_analysis/electronic_structure_publication_figures/figures/V08* \
+            04_VASP_analysis/electronic_structure_publication_figures/source_data/V08_spin_channel_summary.csv \
+            03_cDFT/OH_to_O_spin_response/publication_package/figures/C05_*
+          if git diff --cached --quiet; then
+            echo 'No rendered-output changes to commit.'
+          else
+            git commit -m 'Render V05 V07 V08 and C05 publication panels [skip ci]'
+            git push
+          fi
