@@ -55,3 +55,9 @@ The four VASP states are aligned to **their own Fermi levels**. The validated so
 - **V06c:** d-band-model-style visual option for schematic presentation; use only with an explicit schematic label/caption.
 
 All three options use the project palette (pristine `#374151`, Al-substituted `#2A9D8F`), four-sided frames, publication-sized typography, and export to PNG/TIF/PDF/SVG/EPS.
+
+## Reproducible rendering
+
+- plotting script: `plotting/plot_dband_center_options.py`
+- GitHub Actions workflow: `.github/workflows/render_dband_center.yml`
+- expected rendered outputs: `figures/V06a_*`, `figures/V06b_*`, and `figures/V06c_*`
