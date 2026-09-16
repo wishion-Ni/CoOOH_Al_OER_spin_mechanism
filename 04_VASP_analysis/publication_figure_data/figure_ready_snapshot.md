@@ -2,97 +2,94 @@
 
 ## Purpose
 
-This file provides a compact entry point for downstream manuscript figure generation from the validated `publication_figure_data` interfaces.
+This file provides a compact entry point for downstream manuscript figure selection from the validated theory-data interfaces and publication-ready figure packages.
 
 It is not a final manuscript figure and does not replace scientific interpretation in the manuscript text.
 
 ## Current validated status
 
-- Compact plotting interfaces are available under:
+Compact plotting/data interfaces are available under:
 
 ```text
 04_VASP_analysis/publication_figure_data/
+04_VASP_analysis/electronic_structure_publication_figures/
+04_VASP_analysis/diff_density_publication_data/
 ```
 
-- States:
-  - `pristine__OH`
-  - `pristine__O`
-  - `Al16__OH`
-  - `Al16__O`
+States:
 
-- V01 COHP/ICOHP:
-  - COHP curves: 9624 rows
-  - ICOHP summary: 12 rows
-  - validator: PASS
+- `pristine__OH`
+- `pristine__O`
+- `Al16__OH`
+- `Al16__O`
 
-- V02 diff density:
-  - Four density classes
-  - 19200 slice rows per class
-  - local sphere integration: 24 rows
-  - 0.8 Å sphere definition
-  - validator: PASS
+### V01 COHP/ICOHP
 
-- V03 spin density:
-  - magnetization, spin-up and spin-down grids available
-  - state mapping validated
+- COHP curves: 9624 rows
+- ICOHP summary: 12 rows
+- distance-validated bond mapping
+- publication figures available
+- validator: PASS
 
-- V04 PDOS:
-  - 14660 rows
-  - 20 site mappings
-  - validator: PASS
+### V02 reaction-induced density
 
-## Recommended figure production order
+- four density classes
+- 19200 slice rows per class
+- local sphere integration: 24 rows
+- 0.8 Å sphere definition
+- paired and single-panel publication figures available
+- validator: PASS
 
-### V02: Diff density and local integration
+### V03 spin density
 
-Primary scientific purpose:
+- magnetization, spin-up and spin-down grids available
+- paired and single-panel publication figures available
+- state mapping validated
 
-Show where oxidation-induced charge redistribution occurs during `*OH -> *O` and how Al substitution changes the response pathway.
+### V04 PDOS/frontier-state fingerprints
 
-Recommended panels:
+- 14660 PDOS rows
+- 20 site mappings
+- overview, frontier zoom, and orbital-resolved publication figures available
+- validator: PASS
 
-1. Local sphere integration quantitative comparison.
-2. Representative matched diff-density slices for pristine and Al-substituted systems.
+### V06 d-band-center presentation options
 
-Important:
+Publication-facing quantitative interfaces and reproducible plotting are available under:
 
-- Keep the 0.8 Å integration definition explicit in caption/method.
-- Avoid adding mechanism conclusions directly inside figures.
+```text
+04_VASP_analysis/electronic_structure_publication_figures/source_data/V06_*
+04_VASP_analysis/electronic_structure_publication_figures/plotting/plot_dband_center_options.py
+04_VASP_analysis/electronic_structure_publication_figures/notes/V06_dband_center_interpretation_note.md
+```
 
-### V03: Spin density
+Three collaborator-selectable forms are generated:
 
-Primary scientific purpose:
+1. V06a — absolute occupied active-Co 3d centroid evolution.
+2. V06b — compact spin-resolved centroid-shift summary.
+3. V06c — conventional semi-elliptic d-band-model schematic using exact centroid positions but symbolic DOS width.
 
-Show redistribution of spin response associated with the oxidation step.
+Important boundary: the VASP states are aligned to their own Fermi levels; no vacuum-aligned interpretation of the pristine-versus-Al absolute offset is permitted.
 
-Recommended panels:
+## Recommended figure-selection logic
 
-1. Spin-density spatial comparison.
-2. Local spin summary if available.
+### Core manuscript evidence
 
-### V01: COHP/ICOHP
+1. T01 OER staircase comparison.
+2. cDFT charge/spin response.
+3. Reaction-induced magnetization/charge redistribution.
+4. Selected COHP/ICOHP bonding evidence.
+5. One concise PDOS/frontier-state panel where needed.
 
-Primary scientific purpose:
+### Supporting/SI evidence
 
-Establish bonding-level origin of the modified oxidation pathway.
+- spin-up/spin-down density maps;
+- full-bond COHP/ICOHP variants;
+- orbital-resolved PDOS;
+- Bader charge partition;
+- V06 d-band-center options.
 
-Recommended panels:
-
-1. Selected active-site Co-O COHP curves.
-2. ICOHP summary of key bonds.
-
-Avoid plotting unnecessary bond families.
-
-### V04: PDOS
-
-Primary scientific purpose:
-
-Provide orbital-character support for the electronic-structure interpretation.
-
-Recommended panels:
-
-1. Active Co d and oxygen p projected DOS.
-2. Optional near-Fermi-level zoom.
+V06 should be used as a compact spectral-response descriptor rather than as the primary proof of suppressed Co-centered reconstruction.
 
 ## Required index files
 
@@ -104,6 +101,7 @@ Use these files as the source of truth:
 - `structure_files.tsv`
 - `integrity.tsv`
 - `MISSING_DATA_REPORT.md`
+- `manuscript/theory_figure_package/FIGURE_DELIVERY_MANIFEST.csv`
 
 ## Figure philosophy
 
@@ -112,7 +110,8 @@ The current objective is production of standalone manuscript-ready subfigures:
 - no infographic-style mechanism posters;
 - no final figure arrangement assumptions;
 - no conclusion banners inside panels;
-- each panel should communicate one scientific result.
+- each panel should communicate one scientific result;
+- keep scientific source data and plotting scripts beside each figure family.
 
 Export standard:
 
@@ -120,8 +119,7 @@ Export standard:
 - SVG
 - PNG
 - TIFF
-- 600 dpi where applicable
+- EPS where useful
+- 600 dpi for raster publication outputs where applicable
 
-Next step:
-
-Read `data_interfaces.tsv` and generate V02, V03, V01 and V04 standalone figure components.
+The principal theory figure families are now available for collaborator selection; further work should focus on curation and manuscript integration rather than generating redundant derivative plots.
