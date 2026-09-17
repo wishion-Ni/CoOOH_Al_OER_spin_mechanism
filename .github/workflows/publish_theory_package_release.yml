@@ -1,0 +1,55 @@
+name: Publish theory calculation package
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'manuscript/theory_calculation_complete_package/**'
+      - '.github/workflows/publish_theory_package_release.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  package-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Create complete ZIP package
+        shell: bash
+        run: |
+          set -euo pipefail
+          PACKAGE_DIR='manuscript/theory_calculation_complete_package'
+          ZIP_NAME='theory_calculation_complete_package.zip'
+          rm -f "$ZIP_NAME"
+          cd manuscript
+          zip -r -9 "../$ZIP_NAME" theory_calculation_complete_package
+          cd ..
+          sha256sum "$ZIP_NAME" > "${ZIP_NAME}.sha256"
+          ls -lh "$ZIP_NAME" "${ZIP_NAME}.sha256"
+
+      - name: Publish fixed latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: theory-package-latest
+          ZIP_NAME: theory_calculation_complete_package.zip
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$ZIP_NAME" "${ZIP_NAME}.sha256" --clobber
+            gh release edit "$TAG" \
+              --title 'Theory calculation complete package (latest)' \
+              --notes 'Automatically generated complete download of manuscript/theory_calculation_complete_package from the current main branch.'
+          else
+            git tag -f "$TAG" "${GITHUB_SHA}"
+            git push origin "refs/tags/$TAG" --force
+            gh release create "$TAG" "$ZIP_NAME" "${ZIP_NAME}.sha256" \
+              --title 'Theory calculation complete package (latest)' \
+              --notes 'Automatically generated complete download of manuscript/theory_calculation_complete_package from the current main branch.'
+          fi
