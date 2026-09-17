@@ -1,0 +1,82 @@
+name: Assemble complete theory calculation package
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/assemble_theory_calculation_complete_package.py'
+      - '02_DFT_CP2K/OER_free_energy/T01_combined_OER_staircase/**'
+      - '03_cDFT/OH_to_O_spin_response/**'
+      - '04_VASP_analysis/electronic_structure_publication_data/**'
+      - '04_VASP_analysis/electronic_structure_publication_figures/**'
+      - '04_VASP_analysis/publication_figure_data/**'
+      - '04_VASP_analysis/diff_density_publication_data/**'
+      - 'structures/key_structures/**'
+      - '00_project_management/FINAL_THEORY_AUDIT_20260917.md'
+      - '00_project_management/THEORY_RESULT_INVENTORY.md'
+      - '00_project_management/unresolved_questions.md'
+      - 'manuscript/THEORY_CLAIM_EVIDENCE_MAP.md'
+      - 'manuscript/theory_figure_package/FIGURE_DELIVERY_MANIFEST.csv'
+      - '.github/workflows/assemble_theory_complete_package.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Assemble package
+        run: python scripts/assemble_theory_calculation_complete_package.py
+
+      - name: Verify package
+        shell: bash
+        run: |
+          set -euo pipefail
+          P='manuscript/theory_calculation_complete_package'
+          test -s "$P/README.md"
+          test -s "$P/METHODS.md"
+          test -s "$P/PACKAGE_INDEX.md"
+          test -s "$P/PACKAGE_MANIFEST.csv"
+          test -s "$P/01_thermodynamics/T01_combined_OER_staircase/publication_package/source_data/stepwise_dG.csv"
+          test -d "$P/02_cDFT/OH_to_O_spin_response/publication_package/figures"
+          test -s "$P/03_VASP_electronic_structure/publication_data/PROVENANCE.md"
+          test -d "$P/03_VASP_electronic_structure/publication_figures/figures"
+          test -s "$P/04_reaction_density/diff_density_publication_data/README.md"
+          test -s "$P/05_structures/key_structures/pristine_OH.cif"
+          test -s "$P/05_structures/key_structures/pristine_O.cif"
+          test -s "$P/05_structures/key_structures/Al16_OH.cif"
+          test -s "$P/05_structures/key_structures/Al16_O.cif"
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p=Path('manuscript/theory_calculation_complete_package/PACKAGE_MANIFEST.csv')
+          rows=list(csv.DictReader(p.open(encoding='utf-8')))
+          assert len(rows) > 50, f'Unexpectedly small manifest: {len(rows)} files'
+          print(f'Package verification passed: {len(rows)} copied files')
+          PY
+
+      - name: Commit assembled package
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add manuscript/theory_calculation_complete_package
+          if git diff --cached --quiet; then
+            echo 'Complete theory package is already current.'
+          else
+            git commit -m 'Assemble complete theory calculation delivery package [skip ci]'
+            git push
+          fi
