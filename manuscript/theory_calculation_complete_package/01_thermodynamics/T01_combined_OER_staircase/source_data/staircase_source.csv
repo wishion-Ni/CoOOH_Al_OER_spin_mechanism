@@ -1,0 +1,17 @@
+system,state,step,dG_eV
+CoOOH_pristine,*,0,0.000000
+CoOOH_pristine,*OH,1,1.199993
+CoOOH_pristine,*O,2,2.993136
+CoOOH_pristine,*OOH,3,4.527347
+CoOOH_pristine,O2,4,4.919999
+Al16_Co7_adjAl,*,0,0.000000
+Al16_Co7_adjAl,*OH,1,1.403097
+Al16_Co7_adjAl,*O,2,2.927899
+Al16_Co7_adjAl,*OOH,3,3.799854
+Al16_Co7_adjAl,O2,4,4.920000
+Al16_Al47_control,*,0,0.000000
+Al16_Al47_control,*OH,1,2.382189
+Al16_Al47_control,*O,2,1.371108
+Al16_Al47_control,*OOH,3,3.588650
+Al16_Al47_control,O2,4,4.920000
+

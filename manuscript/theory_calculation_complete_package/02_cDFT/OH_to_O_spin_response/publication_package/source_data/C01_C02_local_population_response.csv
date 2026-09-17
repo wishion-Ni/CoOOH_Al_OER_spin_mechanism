@@ -1,0 +1,9 @@
+system,atom_role,partition,delta_N_e,delta_spin_muB
+Pristine CoOOH,Co_act,Hirshfeld,0.219,-0.821
+Pristine CoOOH,Co_act,Mulliken,0.147192,-0.799981
+Al-substituted,Co_act,Hirshfeld,0.012,-0.448
+Al-substituted,Co_act,Mulliken,0.050237,-0.327443
+Pristine CoOOH,O_ads,Hirshfeld,-0.464,-0.070
+Pristine CoOOH,O_ads,Mulliken,-0.142383,-0.062815
+Al-substituted,O_ads,Hirshfeld,-0.427,-0.744
+Al-substituted,O_ads,Mulliken,-0.303313,-0.802159

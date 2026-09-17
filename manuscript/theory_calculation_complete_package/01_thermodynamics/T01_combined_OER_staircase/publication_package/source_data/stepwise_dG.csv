@@ -1,0 +1,13 @@
+system,elementary_step,step_dG_eV
+CoOOH_pristine,* -> *OH,1.199993
+CoOOH_pristine,*OH -> *O,1.793143
+CoOOH_pristine,*O -> *OOH,1.534211
+CoOOH_pristine,*OOH -> O2,0.392652
+Al16_Co7_adjAl,* -> *OH,1.403097
+Al16_Co7_adjAl,*OH -> *O,1.524802
+Al16_Co7_adjAl,*O -> *OOH,0.871955
+Al16_Co7_adjAl,*OOH -> O2,1.120146
+Al16_Al47_control,* -> *OH,2.382189
+Al16_Al47_control,*OH -> *O,-1.011081
+Al16_Al47_control,*O -> *OOH,2.217542
+Al16_Al47_control,*OOH -> O2,1.331350

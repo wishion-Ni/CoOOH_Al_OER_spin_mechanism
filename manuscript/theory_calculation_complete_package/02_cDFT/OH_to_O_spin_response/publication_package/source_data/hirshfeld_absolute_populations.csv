@@ -1,0 +1,9 @@
+system,state,atom_role,partition,charge_e,spin_muB
+Pristine CoOOH,*OH,Coact,Hirshfeld,-1.356,3.215
+Pristine CoOOH,*O,Coact,Hirshfeld,-1.574,2.394
+Pristine CoOOH,*OH,Oads,Hirshfeld,-0.141,0.607
+Pristine CoOOH,*O,Oads,Hirshfeld,0.324,0.537
+Al-substituted,*OH,Coact,Hirshfeld,-1.458,3.224
+Al-substituted,*O,Coact,Hirshfeld,-1.470,2.776
+Al-substituted,*OH,Oads,Hirshfeld,-0.299,0.336
+Al-substituted,*O,Oads,Hirshfeld,0.128,-0.408

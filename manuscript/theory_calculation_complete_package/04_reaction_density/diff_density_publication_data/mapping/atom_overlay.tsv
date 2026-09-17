@@ -1,0 +1,10 @@
+system	label	x_A	y_A	element
+pristine	Co(act)	-0.964305	0.174110	Co
+pristine	Oads	-2.764056	-0.339209	O
+pristine	Obridge	1.026863	0.725955	O
+pristine	Co(adj)	2.701499	-0.560856	Co
+Al16	Co(act)	-0.964305	0.174110	Co
+Al16	Oads	-2.764056	-0.339209	O
+Al16	Obridge	1.026863	0.725955	O
+Al16	Al	2.701499	-0.560856	Al
+
