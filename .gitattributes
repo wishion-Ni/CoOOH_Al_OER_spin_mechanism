@@ -1,0 +1,30 @@
+# Cross-platform text normalization for Codex sessions on Windows/Linux.
+* text=auto
+
+*.md   text eol=lf
+*.py   text eol=lf
+*.tsv  text eol=lf
+*.csv  text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.sh   text eol=lf
+
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.tif  binary
+*.tiff binary
+*.eps  binary
+*.xlsx binary
+*.npy  binary
+*.npz  binary
+*.h5   binary
+*.hdf5 binary
