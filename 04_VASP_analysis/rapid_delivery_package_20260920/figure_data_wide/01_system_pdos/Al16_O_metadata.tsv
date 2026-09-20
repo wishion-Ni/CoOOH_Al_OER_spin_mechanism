@@ -1,0 +1,5 @@
+field	value
+source_doscar	E:\Codex project\projection 6\artifacts\pdos_oh_o_inputs_20260824\Al16_O\DOSCAR
+source_poscar	E:\Codex project\projection 6\artifacts\pdos_oh_o_inputs_20260824\Al16_O\POSCAR
+efermi_eV	-3.3021743600
+energy_convention	relative_to_model_fermi_level

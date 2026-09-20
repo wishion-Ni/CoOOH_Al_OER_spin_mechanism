@@ -1,0 +1,5 @@
+field	value
+source_doscar	E:\Codex project\projection 6\artifacts\original_model_sources_20260920\Al16_adjacent\bare\DOSCAR.lobster
+source_poscar	E:\Codex project\projection 6\artifacts\original_model_sources_20260920\Al16_adjacent\bare\POSCAR.lobster.vasp
+efermi_eV	-3.2622933900
+energy_convention	relative_to_model_fermi_level
