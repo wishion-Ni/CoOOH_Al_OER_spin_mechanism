@@ -28,6 +28,8 @@ This preserves the active Co, Al, O and H selections used in the previous figure
 
 `05_d_center_wide/bare_d_p_center_width_weight_wide.csv` is a two-row Origin-ready table for the Al16 and undoped bare models. Columns encode model, selected atom, orbital, energy window, center, width, integrated weight, and Fermi level. Both occupied `-8..0 eV` and extended `-8..+4 eV` windows are retained, with absolute and Fermi-relative centers.
 
+`05_d_center_wide/bare_system_d_p_center_width_weight_wide.csv` and `.tsv` are the corresponding full-system element-projected table. They include all available bare-model `Al-p`, `Co-d`, and `O-p` projections, with the same center, width, integrated-weight, and Fermi-level fields.
+
 ## 5. Difference-density data
 
 `06_difference_density_wide/difference_density_all_fields_wide.csv` has one row per grid point and the columns:
@@ -39,4 +41,3 @@ The four Al16 and four undoped fields are the latest validated reaction-density 
 ## Origin use
 
 For a line plot, import a CSV/TSV and select the first column as X. For a 2D density plot, import `x_A`, `y_A` and one field column as XYZ or reshape by the recorded grid dimensions in the corresponding figure-data manifest. No filtering step is required inside Origin.
-
