@@ -1,0 +1,9 @@
+map_type	system	source_tsv	origin_csv	columns	units
+charge_total	undoped	../difference_density_source/charge_density/undoped_control.tsv	charge_total_undoped.csv	x_A,y_A,value	e Angstrom^-3
+charge_total	Al16	../difference_density_source/charge_density/Al16_adjacent.tsv	charge_total_Al16.csv	x_A,y_A,value	e Angstrom^-3
+magnetization	undoped	../difference_density_source/magnetization/undoped_control.tsv	magnetization_undoped.csv	x_A,y_A,value	mu_B Angstrom^-3
+magnetization	Al16	../difference_density_source/magnetization/Al16_adjacent.tsv	magnetization_Al16.csv	x_A,y_A,value	mu_B Angstrom^-3
+spin_up	undoped	../difference_density_source/spin_up/undoped_control.tsv	spin_up_undoped.csv	x_A,y_A,value	e Angstrom^-3
+spin_up	Al16	../difference_density_source/spin_up/Al16_adjacent.tsv	spin_up_Al16.csv	x_A,y_A,value	e Angstrom^-3
+spin_down	undoped	../difference_density_source/spin_down/undoped_control.tsv	spin_down_undoped.csv	x_A,y_A,value	e Angstrom^-3
+spin_down	Al16	../difference_density_source/spin_down/Al16_adjacent.tsv	spin_down_Al16.csv	x_A,y_A,value	e Angstrom^-3

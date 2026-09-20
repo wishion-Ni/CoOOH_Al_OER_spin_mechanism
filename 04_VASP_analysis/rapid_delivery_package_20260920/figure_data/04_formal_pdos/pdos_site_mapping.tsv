@@ -1,0 +1,21 @@
+system	state	site_role	atom_index	element	source_structure	validation_note
+Al16	*OH	Obridge	259	O	raw_minimal/Al16__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*OH	Hterminal	115	H	raw_minimal/Al16__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*OH	Oads	348	O	raw_minimal/Al16__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*OH	neighbor	51	Al	raw_minimal/Al16__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*OH	Coact	16	Co	raw_minimal/Al16__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*O	Obridge	258	O	raw_minimal/pristine__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*O	Hterminal	115	H	raw_minimal/pristine__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*O	Oads	347	O	raw_minimal/pristine__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*O	neighbor	23	Co	raw_minimal/pristine__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*O	Coact	21	Co	raw_minimal/pristine__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*O	Obridge	258	O	raw_minimal/Al16__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*O	Hterminal	115	H	raw_minimal/Al16__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*O	Oads	347	O	raw_minimal/Al16__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*O	neighbor	51	Al	raw_minimal/Al16__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+Al16	*O	Coact	16	Co	raw_minimal/Al16__O/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*OH	Obridge	259	O	raw_minimal/pristine__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*OH	Hterminal	115	H	raw_minimal/pristine__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*OH	Oads	348	O	raw_minimal/pristine__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*OH	neighbor	23	Co	raw_minimal/pristine__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
+pristine	*OH	Coact	21	Co	raw_minimal/pristine__OH/POSCAR.lobster.vasp	dynamic role; selected from current POSCAR geometry and checked against ICOHPLIST
