@@ -1,0 +1,3 @@
+system	source	status	reason	nbands	minimum_safe_nbands	spilling_up_percent	spilling_down_percent
+Al16	artifacts/original_model_sources_20260920/Al16_adjacent/bare	NOT_AVAILABLE	LOBSTER wrote COOPCAR/ICOOPLIST only; lobsterout states pCOHP analyses disabled because NBANDS is below minimum.	990	1055	0.93	1.27
+undoped	artifacts/original_model_sources_20260920/undoped_control/bare	NOT_AVAILABLE	LOBSTER wrote COOPCAR/ICOOPLIST only; lobsterout states pCOHP analyses disabled because NBANDS is below minimum.	1035	1075	0.94	1.25

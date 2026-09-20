@@ -1,0 +1,10 @@
+path	dataset	status	notes
+difference_density_origin	8 CSV maps	complete	same-geometry *O@*OH - *OH@*OH; Origin-ready
+difference_density_origin/origin_map_manifest.tsv	map metadata	complete	explicit units and source mapping
+bare_model/source_data/bare_pdos_selected_sites.tsv	bare PDOS	complete	spin/orbital selected-site data
+bare_model/source_data/bare_d_p_center_width_weight.tsv	bare d/p centers	complete	center, RMS width, weight; relative to each EF
+bare_model/bare_cohp_status.tsv	bare COHP	NOT_AVAILABLE_BY_SOURCE_LIMITATION	pCOHP disabled by insufficient NBANDS; COOP not relabeled
+formal_oh_o_cohp/source_data/cohp_curves_<state>.tsv	formal COHP curves	complete	four validated *OH/*O states
+formal_oh_o_cohp/source_data/icohp_summary.tsv	formal ICOHP	complete	geometry-checked bond rows
+formal_oh_o_cohp/source_data/lobster_quality.tsv	LOBSTER quality	complete	spilling and finish records
+formal_oh_o_pdos/source_data/pdos_curves_<state>.tsv	formal PDOS	complete	four validated *OH/*O states

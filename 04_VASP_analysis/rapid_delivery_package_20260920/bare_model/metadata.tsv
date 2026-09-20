@@ -1,0 +1,3 @@
+system	source_label	natoms	efermi_eV	nbands	minimum_safe_nbands_for_pcohp	raw_source	cohp_status
+Al16	bare	346	-3.26191264	990	1055	server electronic_structure_al_contribution_20260818/cohp_lobster_preconverged_20260819/Al16_adjacent/bare	not_available_pcohp_disabled
+undoped	bare	346	-3.40440666	1035	1075	server electronic_structure_al_contribution_20260818/cohp_lobster_preconverged_20260819/undoped_control/bare	not_available_pcohp_disabled
