@@ -41,3 +41,11 @@ The four Al16 and four undoped fields are the latest validated reaction-density 
 ## Origin use
 
 For a line plot, import a CSV/TSV and select the first column as X. For a 2D density plot, import `x_A`, `y_A` and one field column as XYZ or reshape by the recorded grid dimensions in the corresponding figure-data manifest. No filtering step is required inside Origin.
+
+## Origin 2026 publication subfigures
+
+Each `figures_origin2026/` directory contains independent subfigures, not a composite figure. Every plotted task has PNG, TIFF, PDF, SVG, and EPS exports. PNG/TIFF exports are 600 dpi and are sized for a single manuscript subfigure with four-sided borders and left/bottom tick labels. The matching `origin2026_*.opju` file is the editable Origin 2026 project; the `source_data/` directory contains the exact imported/aggregated CSV tables used by that project.
+
+The density subfigures use paired symmetric color limits for Al16/undoped charge, magnetization, spin-down, and spin-up fields. Empty grid points in the rectangular Origin matrix are represented as zero only for plotting convenience; the original XYZ tables remain unchanged and are the authoritative data.
+
+The reproducible batch script is `tools/build_origin2026_figures.ps1`. It uses the installed Origin 2026 COM/LabTalk runner and does not generate a composite figure or add captions.

@@ -1,0 +1,21 @@
+system	atom_index	element	site_role	orbital_family	window	Emin_relative_eV	Emax_relative_eV	center_relative_eV	center_absolute_eV	width_eV	integrated_weight	fermi_level_eV	source_note
+Al16	16	Co	active_Co	d	occupied_-8_0	-8.0	0.0	-5.20354649	-8.46545913	2.39695485	3.73935664	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	16	Co	active_Co	d	extended_-8_4	-8.0	4.0	-2.61602512	-5.87793776	4.07427328	5.71690992	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	51	Al	substitution_site	p	occupied_-8_0	-8.0	0.0	-4.90672469	-8.16863733	1.63111215	0.58336342	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	51	Al	substitution_site	p	extended_-8_4	-8.0	4.0	-3.14136345	-6.40327609	3.65960184	0.74492113	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	258	O	bridge_O	p	occupied_-8_0	-8.0	0.0	-5.04969323	-8.31160587	1.72312479	4.49583002	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	258	O	bridge_O	p	extended_-8_4	-8.0	4.0	-4.81165644	-8.07356908	2.18057380	4.63318312	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	259	O	framework_O	p	occupied_-8_0	-8.0	0.0	-4.55001160	-7.81192424	1.70811668	4.48528082	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	259	O	framework_O	p	extended_-8_4	-8.0	4.0	-4.44001718	-7.70192982	1.92984026	4.54962740	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	294	O	framework_O	p	occupied_-8_0	-8.0	0.0	-3.03471219	-6.29662483	2.16002599	5.11115850	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+Al16	294	O	framework_O	p	extended_-8_4	-8.0	4.0	-2.74267840	-6.00459104	2.44409966	5.40318261	-3.26191264	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	21	Co	active_Co	d	occupied_-8_0	-8.0	0.0	-5.30981857	-8.71422523	2.22670212	3.84804145	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	21	Co	active_Co	d	extended_-8_4	-8.0	4.0	-2.76828518	-6.17269184	3.96211026	5.87547982	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	23	Co	substitution_site	d	occupied_-8_0	-8.0	0.0	-3.69059420	-7.09500086	1.79263143	3.39554531	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	23	Co	substitution_site	d	extended_-8_4	-8.0	4.0	-2.04982615	-5.45423281	3.41702668	4.39593208	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	258	O	bridge_O	p	occupied_-8_0	-8.0	0.0	-3.93615402	-7.34056068	1.98017869	5.17816267	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	258	O	bridge_O	p	extended_-8_4	-8.0	4.0	-3.80606069	-7.21046735	2.15208125	5.29224285	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	259	O	framework_O	p	occupied_-8_0	-8.0	0.0	-3.66108738	-7.06549404	2.14938418	5.28009411	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	259	O	framework_O	p	extended_-8_4	-8.0	4.0	-3.61101790	-7.01542456	2.21360520	5.32450602	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	294	O	framework_O	p	occupied_-8_0	-8.0	0.0	-3.23838980	-6.64279646	2.14402639	4.95292802	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
+undoped	294	O	framework_O	p	extended_-8_4	-8.0	4.0	-2.84063660	-6.24504326	2.44158414	5.44132472	-3.40440666	Absolute energies are not vacuum aligned; compare relative-to-EF curves.
